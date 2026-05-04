@@ -12,6 +12,8 @@ const inputStyle = {
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' })
   const [sent, setSent] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
 
   useEffect(() => {
     gsap.fromTo('.contact-hero', { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 0.9, ease: 'power3.out' })
@@ -19,9 +21,32 @@ export default function Contact() {
 
   const handle = (k, v) => setForm(f => ({ ...f, [k]: v }))
 
-  const submit = (e) => {
+  const submit = async (e) => {
     e.preventDefault()
-    gsap.to('.contact-form', { opacity: 0, y: -20, duration: 0.4, onComplete: () => setSent(true) })
+    setLoading(true)
+    setError('')
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(form),
+      })
+
+      const data = await response.json()
+
+      if (response.ok) {
+        gsap.to('.contact-form', { opacity: 0, y: -20, duration: 0.4, onComplete: () => setSent(true) })
+      } else {
+        setError(data.error || 'Failed to send message. Please try again.')
+      }
+    } catch (err) {
+      setError('Network error. Please check your connection and try again.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -42,14 +67,14 @@ export default function Contact() {
             </div>
             <div style={{ marginBottom: 48 }}>
               <h3 style={{ fontFamily: 'var(--font-d)', fontSize: 22, color: 'var(--acid)', marginBottom: 16 }}>EMAIL</h3>
-              <p style={{ color: 'var(--fg)', fontSize: 13 }}>info@technokosovo.com</p>
-              <p style={{ color: 'var(--fg-dim)', fontSize: 11, marginTop: 4 }}>Bookings: bookings@technokosovo.com</p>
-              <p style={{ color: 'var(--fg-dim)', fontSize: 11 }}>Press: press@technokosovo.com</p>
+              <p style={{ color: 'var(--fg)', fontSize: 13 }}>kosovotechno@gmail.com</p>
+              <p style={{ color: 'var(--fg-dim)', fontSize: 11, marginTop: 4 }}></p>
+          
             </div>
             <div style={{ marginBottom: 48 }}>
               <h3 style={{ fontFamily: 'var(--font-d)', fontSize: 22, color: 'var(--acid)', marginBottom: 16 }}>FOLLOW</h3>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-                {[['Instagram', 'https://www.instagram.com/technokosovo/'], ['Facebook', 'https://facebook.com'], ['SoundCloud', 'https://soundcloud.com'], ['Resident Advisor', 'https://ra.co']].map(([n, u]) => (
+                {[['Instagram', 'https://www.instagram.com/technokosovo/'], ['Facebook', 'https://facebook.com/TechnoKosovo'], ['SoundCloud', 'https://soundcloud.com/TechnoKosovo'], ['Resident Advisor', 'https://ra.co/promoters/172435']].map(([n, u]) => (
                   <a key={n} href={u} target="_blank" rel="noreferrer" style={{
                     color: 'var(--fg-dim)', fontSize: 12, textDecoration: 'none', letterSpacing: '0.08em',
                     textTransform: 'uppercase', borderBottom: '1px solid var(--border)', paddingBottom: 8, transition: 'color 0.2s',
