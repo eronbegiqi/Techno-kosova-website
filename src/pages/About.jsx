@@ -5,8 +5,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 const team = [
-  { name: 'Egzon Potoku', role: 'Founder / Events Director' },
-  { name: 'Eron Begu', role: 'Technical Production' },
+  { name: 'Person 1', role: 'Founder / Events Director' },
+  { name: 'Person 2', role: 'Technical Production' },
 ]
 
 export default function About() {
