@@ -49,7 +49,7 @@ export default function Contact() {
             <div style={{ marginBottom: 48 }}>
               <h3 style={{ fontFamily: 'var(--font-d)', fontSize: 22, color: 'var(--acid)', marginBottom: 16 }}>FOLLOW</h3>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-                {[['Instagram', 'https://instagram.com'], ['Facebook', 'https://facebook.com'], ['SoundCloud', 'https://soundcloud.com'], ['Resident Advisor', 'https://ra.co']].map(([n, u]) => (
+                {[['Instagram', 'https://www.instagram.com/technokosovo/'], ['Facebook', 'https://facebook.com'], ['SoundCloud', 'https://soundcloud.com'], ['Resident Advisor', 'https://ra.co']].map(([n, u]) => (
                   <a key={n} href={u} target="_blank" rel="noreferrer" style={{
                     color: 'var(--fg-dim)', fontSize: 12, textDecoration: 'none', letterSpacing: '0.08em',
                     textTransform: 'uppercase', borderBottom: '1px solid var(--border)', paddingBottom: 8, transition: 'color 0.2s',
