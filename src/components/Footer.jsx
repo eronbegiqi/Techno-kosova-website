@@ -39,7 +39,7 @@ export default function Footer() {
             <p style={{ fontSize: 10, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--fg-dim)', marginBottom: 20 }}>Stay Connected</p>
             <div style={{ display: 'flex', gap: 12, marginBottom: 28, flexWrap: 'wrap' }}>
               {['Instagram', 'Facebook', 'SoundCloud', 'RA'].map(s => (
-                <a key={s} href="https://example.com" target="_blank" rel="noreferrer" style={{
+                <a key={s} href="https://www.instagram.com/technokosovo" target="_blank" rel="noreferrer" style={{
                   fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase',
                   color: 'var(--fg-dim)', textDecoration: 'none', border: '1px solid var(--border)',
                   padding: '6px 12px', transition: 'all 0.2s',

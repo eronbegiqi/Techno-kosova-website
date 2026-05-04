@@ -80,18 +80,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* MARQUEE */}
-      <div className="marquee-wrap">
-        <div className="marquee-track">
-          {[...events, ...events].map((e, i) => (
-            <span key={i} className="marquee-item">
-              <span className="marquee-dot">◆</span>
-              {e.title} — {e.venue} — {formatDate(e.date)}
-            </span>
-          ))}
-        </div>
-      </div>
-
       {/* FEATURED EVENTS */}
       <section className="section">
         <div className="container">
@@ -204,7 +192,7 @@ export default function Home() {
           <p className="reveal-up" style={{ color: 'var(--fg-dim)', fontSize: 14, maxWidth: 480, margin: '0 auto 40px', lineHeight: 1.8 }}>
             Techno Kosovo is community-funded. Your support keeps events accessible, artists paid fairly, and the culture growing.
           </p>
-          <Link to="/donate" className="btn reveal-up">Support Us</Link>
+          <Link to="www.ko-fi.com/TechnoKosovo" className="btn reveal-up">Support Us</Link>
         </div>
       </section>
     </div>
