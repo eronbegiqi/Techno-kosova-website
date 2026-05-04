@@ -192,7 +192,7 @@ export default function Home() {
           <p className="reveal-up" style={{ color: 'var(--fg-dim)', fontSize: 14, maxWidth: 480, margin: '0 auto 40px', lineHeight: 1.8 }}>
             Techno Kosovo is community-funded. Your support keeps events accessible, artists paid fairly, and the culture growing.
           </p>
-          <Link to="www.ko-fi.com/TechnoKosovo" className="btn reveal-up">Support Us</Link>
+          <a href="https://www.ko-fi.com/TechnoKosovo" target="_blank" rel="noopener noreferrer" className="btn reveal-up">Support Us</a>
         </div>
       </section>
     </div>
