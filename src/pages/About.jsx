@@ -5,12 +5,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 const team = [
-  { name: 'Blerta Hoxha', role: 'Co-founder / Events Director' },
-  { name: 'Mentor Gashi', role: 'Co-founder / Creative Director' },
-  { name: 'Arta Kelmendi', role: 'Artist Bookings' },
-  { name: 'Liridon Berisha', role: 'Media & Communications' },
-  { name: 'Fjolla Selimi', role: 'Community & Partnerships' },
-  { name: 'Granit Morina', role: 'Technical Production' },
+  { name: 'Egzon Potoku', role: 'Founder / Events Director' },
+  { name: 'Eron Begu', role: 'Technical Production' },
 ]
 
 export default function About() {
