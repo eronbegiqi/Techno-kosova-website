@@ -7,10 +7,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 export default function Artists() {
   const [selected, setSelected] = useState(null)
-  const [filter, setFilter] = useState('All')
-
-  const allGenres = ['All', ...new Set(artists.flatMap(a => a.genres))]
-  const filtered = filter === 'All' ? artists : artists.filter(a => a.genres.includes(filter))
+  const filtered = artists
   const artist = selected ? artists.find(a => a.id === selected) : null
 
   useEffect(() => {
@@ -21,7 +18,7 @@ export default function Artists() {
           scrollTrigger: { trigger: el, start: 'top 90%' } })
     })
     return () => ScrollTrigger.getAll().forEach(t => t.kill())
-  }, [filter])
+  }, [])
 
   useEffect(() => {
     if (selected) {
@@ -40,17 +37,6 @@ export default function Artists() {
           <p className="text-dim uppercase" style={{ fontSize: 11, marginBottom: 12, letterSpacing: '0.16em' }}>— Roster</p>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: 24 }}>
             <h1 style={{ fontSize: 'clamp(64px, 10vw, 140px)' }}>ARTISTS<span className="text-acid">.</span></h1>
-            <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', paddingBottom: 8 }}>
-              {allGenres.map(g => (
-                <button key={g} onClick={() => setFilter(g)} style={{
-                  background: filter === g ? 'var(--acid)' : 'transparent',
-                  color: filter === g ? 'var(--bg)' : 'var(--fg-dim)',
-                  border: `1px solid ${filter === g ? 'var(--acid)' : 'var(--border)'}`,
-                  fontFamily: 'var(--font-b)', fontSize: 10, letterSpacing: '0.12em',
-                  textTransform: 'uppercase', padding: '6px 14px', transition: 'all 0.2s',
-                }}>{g}</button>
-              ))}
-            </div>
           </div>
         </div>
       </div>
@@ -70,7 +56,6 @@ export default function Artists() {
               <div style={{ padding: '24px 24px 28px' }}>
                 <div style={{ display: 'flex', gap: 6, marginBottom: 16, flexWrap: 'wrap' }}>
                   {a.tags.map(t => <span key={t} className="tag tag-dim">{t}</span>)}
-                  {a.genres.map(g => <span key={g} className="tag" style={{ color: 'var(--acid)', borderColor: 'var(--acid-dim)' }}>{g}</span>)}
                 </div>
                 <h3 style={{ fontFamily: 'var(--font-d)', fontSize: 52, lineHeight: 0.95, marginBottom: 6 }}>{a.name}</h3>
                 <p style={{ color: 'var(--fg-dim)', fontSize: 11, letterSpacing: '0.08em', marginBottom: 16 }}>{a.realName} — {a.origin}</p>
@@ -113,7 +98,6 @@ export default function Artists() {
 
             <div style={{ padding: 40 }}>
               <div style={{ display: 'flex', gap: 6, marginBottom: 20, flexWrap: 'wrap' }}>
-                {artist.genres.map(g => <span key={g} className="tag">{g}</span>)}
                 {artist.tags.map(t => <span key={t} className="tag tag-dim">{t}</span>)}
               </div>
               <h2 style={{ fontFamily: 'var(--font-d)', fontSize: 72, lineHeight: 0.95, marginBottom: 8 }}>{artist.name}</h2>
