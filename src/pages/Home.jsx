@@ -95,7 +95,7 @@ export default function Home() {
             {featured.map((ev, i) => (
               <div key={ev.id} className="card reveal-up" style={{ background: 'var(--bg)', padding: 32, display: 'flex', flexDirection: 'column', gap: 16, minHeight: 320, position: 'relative', overflow: 'hidden' }}>
                 <div style={{ position: 'absolute', inset: 0, background: ev.posterColor, opacity: 0.4 }} />
-                <div style={{ position: 'relative', zIndex: 1 }}>
+                <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', minHeight: '100%' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 24 }}>
                     <span className="tag">{ev.soldOut ? 'SOLD OUT' : 'TICKETS AVAILABLE'}</span>
                     <span style={{ fontFamily: 'var(--font-d)', fontSize: 13, color: 'var(--fg-dim)', letterSpacing: '0.08em' }}>0{i + 1}</span>
@@ -107,7 +107,7 @@ export default function Home() {
                   <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 24 }}>
                     {ev.lineup.slice(0, 3).map(n => <span key={n} className="tag tag-dim">{n}</span>)}
                   </div>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <div style={{ marginTop: 'auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <span style={{ color: 'var(--acid)', fontFamily: 'var(--font-b)', fontSize: 12 }}>{ev.price}</span>
                     {!ev.soldOut && (
                       <a href={ev.ticketLink} target="_blank" rel="noreferrer" className="btn" style={{ padding: '10px 20px', fontSize: 11 }}>Buy Tickets</a>
