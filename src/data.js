@@ -99,6 +99,22 @@ export const artists = [
 
 export const events = [
   {
+    id: 'mihai-popoviciu-next-level',
+    title: 'MIHAI POPOVICIU - NEXT LEVEL',
+    subtitle: 'An Experimental Concept',
+    date: '2026-05-08',
+    time: '22:00',
+    venue: 'AMC HALL, I STAGE 2',
+    address: 'Bucharest, Romania',
+    lineup: ['Mihai Popoviciu', 'La Barosha', 'Baxei', 'MiM'],
+    description: 'A new experimental concept where the night unfolds phase by phase, a journey through sound, atmosphere, and energy. Featuring Romanian legend and Cyclic Records boss Mihai Popoviciu, supported by rising female talent La Barosha, old school selector Baxei, and MiM — a key figure in Kosovo\'s electronic music movement.',
+    ticketLink: 'https://www.rave-travel.com/event-details-en.nspx?eventid=4098',
+    price: '€10 advance / €15 at door',
+    soldOut: false,
+    featured: true,
+    posterColor: '#cc1111',
+  },
+  {
     id: 'unum-festival',
     title: 'UNUM FESTIVAL',
     subtitle: '5 Days Non-Stop Music',
