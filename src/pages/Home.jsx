@@ -137,7 +137,12 @@ export default function Home() {
             {featuredArtists.map(a => (
               <Link key={a.id} to="/artists" style={{ textDecoration: 'none' }}>
                 <div className="card reveal-up" style={{ background: 'var(--bg)', padding: 28, display: 'flex', flexDirection: 'column', gap: 12, height: '100%' }}>
-                  <div className="video-placeholder" style={{ marginBottom: 4 }}>
+                  <div className="video-placeholder" style={{
+                    marginBottom: 4,
+                    backgroundImage: a.videoId ? `url(https://img.youtube.com/vi/${a.videoId}/hqdefault.jpg)` : undefined,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                  }}>
                     <div className="play-icon" />
                     <div style={{ position: 'absolute', bottom: 10, left: 12, right: 12, display: 'flex', justifyContent: 'space-between' }}>
                       <span style={{ fontSize: 10, color: 'var(--fg-dim)', letterSpacing: '0.08em' }}>{a.videoLabel}</span>
