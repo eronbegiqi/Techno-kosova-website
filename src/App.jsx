@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import { Routes, Route, useLocation } from 'react-router-dom'
+import { Routes, Route, useLocation, Navigate } from 'react-router-dom'
 import { gsap } from 'gsap'
 import Nav from './components/Nav.jsx'
 import Footer from './components/Footer.jsx'
@@ -8,7 +8,6 @@ import Events from './pages/Events.jsx'
 import Artists from './pages/Artists.jsx'
 import About from './pages/About.jsx'
 import Donate from './pages/Donate.jsx'
-import Contact from './pages/Contact.jsx'
 
 export default function App() {
   const location = useLocation()
@@ -72,8 +71,8 @@ export default function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/artists" element={<Artists />} />
           <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Navigate to="/about" replace />} />
           <Route path="/donate" element={<Donate />} />
-          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
       <Footer />

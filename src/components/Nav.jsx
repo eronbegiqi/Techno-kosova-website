@@ -8,7 +8,6 @@ const links = [
   { to: '/artists', label: 'Artists' },
   { to: '/about', label: 'About' },
   { to: '/donate', label: 'Donate' },
-  { to: '/contact', label: 'Contact' },
 ]
 
 export default function Nav() {
