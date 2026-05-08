@@ -59,9 +59,6 @@ export default function Artists() {
               </div>
 
               <div style={{ padding: '24px 24px 28px' }}>
-                <div style={{ display: 'flex', gap: 6, marginBottom: 16, flexWrap: 'wrap' }}>
-                  {a.tags.map(t => <span key={t} className="tag tag-dim">{t}</span>)}
-                </div>
                 <h3 style={{ fontFamily: 'var(--font-d)', fontSize: 52, lineHeight: 0.95, marginBottom: 6 }}>{a.name}</h3>
                 <p style={{ color: 'var(--fg-dim)', fontSize: 11, letterSpacing: '0.08em', marginBottom: 16 }}>{a.realName} — {a.origin}</p>
                 <p style={{ color: 'var(--fg-dim)', fontSize: 12, lineHeight: 1.7 }}>{a.bio.slice(0, 120)}…</p>
@@ -116,9 +113,6 @@ export default function Artists() {
             </div>
 
             <div style={{ padding: 40 }}>
-              <div style={{ display: 'flex', gap: 6, marginBottom: 20, flexWrap: 'wrap' }}>
-                {artist.tags.map(t => <span key={t} className="tag tag-dim">{t}</span>)}
-              </div>
               <h2 style={{ fontFamily: 'var(--font-d)', fontSize: 72, lineHeight: 0.95, marginBottom: 8 }}>{artist.name}</h2>
               <p style={{ color: 'var(--fg-dim)', fontSize: 12, letterSpacing: '0.1em', marginBottom: 28 }}>{artist.realName} — {artist.origin}</p>
               <p style={{ color: 'var(--fg)', fontSize: 14, lineHeight: 1.8, marginBottom: 36 }}>{artist.bio}</p>
