@@ -46,7 +46,12 @@ export default function Artists() {
           {filtered.map(a => (
             <div key={a.id} className="artist-card card" style={{ background: 'var(--bg)', cursor: 'pointer' }}
               onClick={() => setSelected(a.id)}>
-              <div className="video-placeholder" style={{ height: 200 }}>
+              <div className="video-placeholder" style={{
+                height: 200,
+                backgroundImage: a.videoId ? `url(https://img.youtube.com/vi/${a.videoId}/hqdefault.jpg)` : undefined,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+              }}>
                 <div className="play-icon" />
                 <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '12px 16px', background: 'linear-gradient(to top, rgba(8,8,8,0.9), transparent)' }}>
                   <p style={{ fontSize: 10, color: 'var(--fg-dim)', letterSpacing: '0.06em' }}>{a.videoLabel}</p>
@@ -83,7 +88,21 @@ export default function Artists() {
           <div className="artist-modal-inner" onClick={e => e.stopPropagation()} style={{
             background: 'var(--bg2)', border: '1px solid var(--border)', maxWidth: 760, width: '100%',
           }}>
-            <div className="video-placeholder" style={{ height: 360 }}>
+            <div className="video-placeholder" style={{
+              height: 360,
+              backgroundImage: artist.videoId ? `url(https://img.youtube.com/vi/${artist.videoId}/hqdefault.jpg)` : undefined,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}>
+              {artist.videoId && (
+                <iframe
+                  title={`${artist.name} video`}
+                  src={`https://www.youtube.com/embed/${artist.videoId}?rel=0`}
+                  style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: '0', zIndex: 0 }}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              )}
               <div className="play-icon" style={{ width: 64, height: 64 }} />
               <div style={{ position: 'absolute', top: 20, right: 20 }}>
                 <button onClick={() => setSelected(null)} style={{
