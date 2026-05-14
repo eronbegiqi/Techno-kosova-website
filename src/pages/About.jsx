@@ -4,6 +4,14 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
 
+const subjects = ['General Inquiry', 'Artist Booking', 'Press & Media', 'Partnership', 'Volunteer', 'Technical Issue']
+
+const inputStyle = {
+  width: '100%', background: 'var(--bg2)', border: '1px solid var(--border)',
+  color: 'var(--fg)', fontFamily: 'var(--font-b)', fontSize: 13, padding: '14px 16px',
+  outline: 'none', transition: 'border-color 0.2s',
+}
+
 const team = [
   { name: 'Person 1', role: 'Founder / Events Director' },
   { name: 'Person 2', role: 'Technical Production' },
