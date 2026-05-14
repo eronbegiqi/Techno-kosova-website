@@ -282,7 +282,7 @@ export const artists = [
 
     links: { soundcloud: 'https://soundcloud.com/neritaan', bandcamp: 'https://jusluvrecordings.bandcamp.com/album/cellophane-dreams-ep' },
 
-    videoId: '',
+    videoId: 'Zh7ujhJBpVE',
 
     videoLabel: 'Video Coming Soon',
 
