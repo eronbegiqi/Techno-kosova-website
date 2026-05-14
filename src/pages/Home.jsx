@@ -150,9 +150,6 @@ export default function Home() {
                       <span style={{ fontSize: 10, color: 'var(--fg-dim)', letterSpacing: '0.08em' }}>{a.videoLabel}</span>
                     </div>
                   </div>
-                  <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-                    {a.genres.map(g => <span key={g} className="tag tag-dim">{g}</span>)}
-                  </div>
                   <h3 style={{ fontFamily: 'var(--font-d)', fontSize: 36 }}>{a.name}</h3>
                   <p style={{ color: 'var(--fg-dim)', fontSize: 11 }}>{a.realName} — {a.origin}</p>
                   <p style={{ color: 'var(--fg-dim)', fontSize: 12, lineHeight: 1.6 }}>{a.bio.slice(0, 100)}…</p>
