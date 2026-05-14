@@ -107,7 +107,7 @@ function EventRow({ ev }) {
 
 export default function Events() {
   const [filter, setFilter] = useState('all')
-  const now = new Date('2026-04-24')
+  const now = new Date('2026-05-12')
   const upcoming = events.filter(e => new Date(e.date) >= now).sort((a, b) => new Date(a.date) - new Date(b.date))
   const past = events.filter(e => new Date(e.date) < now).sort((a, b) => new Date(b.date) - new Date(a.date))
   const filtered = filter === 'past' ? past : upcoming

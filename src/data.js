@@ -6,7 +6,7 @@ export const artists = [
     origin: 'Gjakova',
     genres: ['Techno', 'Industrial'],
     bio: "Altin Boshnjaku (Gjakova, Kosovo) has been part of the underground scene since late 2014. His sets fuse hypnotic techno, minimal, and deep house with rolling grooves and careful selection. Long-time resident at Zone Club’s Electronic Series (supported Tobi Neumann, Cassy and others) and a regular at UNUM Festival.",
-    links: { soundcloud: 'https://soundcloud.com', instagram: 'https://instagram.com', ra: 'https://ra.co' },
+    links: { instagram: 'https://instagram.com/altin_boshnjaku' },
     videoId: 'K9xkDgqcuoY',
     videoLabel: 'Altin Boshnjaku — YouTube Short',
   },
@@ -17,7 +17,7 @@ export const artists = [
     origin: 'Prishtinë',
     genres: ['Minimal Techno', 'Dub Techno'],
     bio: "Oda Haliti is a dynamic DJ, producer, and cultural activist based in Prishtina. Known for her genre-bending sound, she weaves together experimental electronic beats, acid disco, and minimal techno to create an electrifying dance floor groove. Rising through the regional underground scene with her raw talent, she has performed at major international stages, including Berghain and Kala Festival. Beyond her solo performances, Oda pushes creative boundaries through collaborative projects like Tandem and In•Tendo, cementing her role as a vital force in the Balkan electronic music landscape.",
-    links: { soundcloud: 'https://soundcloud.com', instagram: 'https://instagram.com', ra: 'https://ra.co' },
+    links: { instagram: 'https://instagram.com/odahaliti' },
     videoId: 'E8mdBoQ00Nk',
     videoLabel: 'Oda Haliti — Live YouTube Set',
   },
@@ -27,8 +27,8 @@ export const artists = [
     realName: 'Uran Badivuku',
     origin: 'Prishtinë',
     genres: ['Dark Techno', 'EBM'],
-    bio: "Uran Badivuku, widely known as Uran B., is a pioneering DJ, producer, and cultural organizer based in Prishtina. As a driving force behind the local electronic music scene, he co-founded the influential collective and organization Hapësira, which has played a major role in shaping the contemporary underground house and techno movement in Kosovo.  With a forward-thinking approach that dates back to the early days of the post-war warehouse scene at Rilindja, Uran has spent over a decade breaking musical routines and building an international platform for Balkan artists. His style and sets bridge the gap between forward-thinking, industrial-leaning sounds and a deeply rooted collective vision.  Known as an objective and critical voice for the arts, he continually redefines the relationship between the DJ booth and the dance floor, championing collectivism and resilience in the digital and cultural industries.  Uran’s influence extends beyond his own productions and performances, as he has been instrumental in fostering a vibrant community of artists and audiences through his work with Hapësira and his commitment to creating inclusive spaces for electronic music in Kosovo and the wider region.",
-    links: { soundcloud: 'https://soundcloud.com', instagram: 'https://instagram.com', bandcamp: 'https://bandcamp.com' },
+    bio: "Uran Badivuku, widely known as Uran B., is a pioneering DJ, and cultural organizer based in Prishtina. As a driving force behind the local electronic music scene, he co-founded the influential collective and organization Hapësira, which has played a major role in shaping the contemporary underground house and techno movement in Kosovo.  With a forward-thinking approach that dates back to the early days of the post-war warehouse scene at Rilindja, Uran has spent over a decade breaking musical routines and building an international platform for Balkan artists. Email contact uran@hapesira.space",
+    links: { soundcloud: 'https://soundcloud.com/uranb', instagram: 'https://instagram.com/uranb' },
     videoId: 'qfQb4D0cdgo',
     videoLabel: 'Uran B. — Live YouTube Set',
   },
@@ -39,7 +39,7 @@ export const artists = [
     origin: 'Prishtinë',
     genres: ['Acid Techno', 'Rave'],
     bio: "Nazim Maxhuni, widely known as DJ MiM, is an established figure in Prishtina's music scene with 25 years of experience, during which he has helped shape the techno and electronic music scene in Kosovo and beyond. With a versatile and dynamic approach to mixing, he is known for bringing high energy and a smooth flow to dance floors, drawing from various electronic and house-oriented sounds.Over the years, he has built a reputation for reading the crowd, blending rhythm with a deep connection to the regional nightlife. His sets capture the vibrant, energetic spirit of the local club and event scene while remaining a staple for a broad audience.",
-    links: { soundcloud: 'https://soundcloud.com', instagram: 'https://instagram.com' },
+    links: { instagram: 'https://instagram.com/djm1m' },
     videoId: 'w8dyB-O80p0',
     videoLabel: 'MiM — Live YouTube Set',
   },
@@ -49,43 +49,10 @@ export const artists = [
     realName: 'Fatos Cunaku',
     origin: 'Prishtinë',
     genres: ['Experimental', 'Noise'],
-    bio: 'Under the alias FOLD, Fisnik Gashi explores the outer limits of electronic music — noise, drone, and deconstructed club music collide in performances that challenge assumptions about what a DJ set can be.',
-    links: { soundcloud: 'https://soundcloud.com', bandcamp: 'https://bandcamp.com' },
+    bio: 'Born and raised in Kosovo, he began producing at 16 and quickly became a prominent figure in the Balkan underground electronic scene. As the founder of RaveCultur, he has built a major platform supporting young artists and organizing events.',
+    links: { soundcloud: 'https://soundcloud.com/tosketoske', instagram: 'https://www.instagram.com/toske_____/' },
     videoId: 'IY3WLsM-NGY',
     videoLabel: 'TOSKE — Live YouTube Set',
-  },
-  {
-    id: 'hana',
-    name: 'HANA',
-    realName: 'Hana Gashi',
-    origin: 'Prishtinë',
-    genres: ['House', 'Garage', 'UK Bass'],
-    bio: 'HANA bridges underground house and UK garage with a Kosovar sensibility, bringing warmth and groove to a scene that often skews dark. Her DJ sets are masterclasses in reading a room and building euphoria.',
-    links: { soundcloud: 'https://soundcloud.com', instagram: 'https://instagram.com' },
-    videoId: 'dQw4w9WgXcQ',
-    videoLabel: 'NOCTURNAL VOL.11 — OPENING SET',
-  },
-  {
-    id: 'skena',
-    name: 'SKENA',
-    realName: 'Skena Collective',
-    origin: 'Prishtinë',
-    genres: ['Acid', 'Tekno'],
-    bio: "SKENA is a three-piece DJ collective who cut their teeth at free parties in the hills outside Prishtina before becoming one of the city's most requested acts. Acid lines, hard tekno, and zero compromise.",
-    links: { soundcloud: 'https://soundcloud.com', instagram: 'https://instagram.com' },
-    videoId: 'dQw4w9WgXcQ',
-    videoLabel: 'FREE PARTY GËRMIA — SUNRISE SET',
-  },
-  {
-    id: 'disa',
-    name: 'DISA',
-    realName: 'Disa Morina',
-    origin: 'Pejë',
-    genres: ['Ambient', 'Drone', 'Downtempo'],
-    bio: "Disa Morina's ambient and drone work under the DISA alias occupies the quieter hours and the in-between spaces. Her music soundtracks Kosovar landscapes — vast, haunted, and quietly breathtaking.",
-    links: { soundcloud: 'https://soundcloud.com', bandcamp: 'https://bandcamp.com' },
-    videoId: 'dQw4w9WgXcQ',
-    videoLabel: 'AMBIENT SERIES — LIVE RECORDING',
   },
   {
     id: 'anite',
@@ -310,6 +277,29 @@ export const artists = [
     videoId: 'e8cdB8y8rZQ',
     videoLabel: 'RT Art Bejtullahu — YouTube Video',
   },
+
+  {
+
+    id: 'neritaan',
+
+    name: 'Neritaan',
+
+    realName: 'Neritaan',
+
+    origin: 'Kosovo',
+
+    genres: ['Minimal', 'Deep Tech'],
+
+    bio: "Neritaan is a DJ and producer of electronic music with minimal deep tech preferences. Find more at https://www.beatport.com/artist/neritaan/926976 and linktr.ee/neritaan",
+
+    links: { soundcloud: 'https://soundcloud.com/neritaan', bandcamp: 'https://jusluvrecordings.bandcamp.com/album/cellophane-dreams-ep' },
+
+    videoId: '',
+
+    videoLabel: 'Video Coming Soon',
+
+  },
+
 ]
 
 export const events = [

@@ -10,7 +10,9 @@ const formatDate = (d) =>
   new Date(d).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }).toUpperCase()
 
 export default function Home() {
-  const featured = events.filter(e => e.featured).slice(0, 3)
+  const now = new Date('2026-05-12')
+  const upcoming = events.filter(e => new Date(e.date) >= now).sort((a, b) => new Date(a.date) - new Date(b.date))
+  const featured = upcoming.filter(e => e.featured).slice(0, 3)
   const featuredArtists = artists.slice(0, 4)
 
   useEffect(() => {
@@ -44,7 +46,7 @@ export default function Home() {
           <div className="hero-meta" style={{ display: 'flex', gap: 24, marginBottom: 32, alignItems: 'center' }}>
             <span className="tag">Prishtinë, Kosovo</span>
             <span style={{ color: 'var(--fg-dim)', fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase' }}>Est. 2019</span>
-            <span style={{ color: 'var(--acid)', fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase' }}>— Upcoming: {events[0].date}</span>
+            <span style={{ color: 'var(--acid)', fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase' }}>— Upcoming: {upcoming[0]?.date || events[0].date}</span>
           </div>
 
           <div style={{ overflow: 'hidden', marginBottom: 8 }}>

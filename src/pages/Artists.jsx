@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { artists } from '../data.js'
@@ -7,6 +7,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 export default function Artists() {
   const [selected, setSelected] = useState(null)
+  const modalRef = useRef(null)
   const filtered = artists
   const artist = selected ? artists.find(a => a.id === selected) : null
 
@@ -24,6 +25,8 @@ export default function Artists() {
     if (selected) {
       gsap.fromTo('.artist-modal-inner', { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: 'power3.out' })
       document.body.style.overflow = 'hidden'
+      window.scrollTo(0, 0)
+      if (modalRef.current) modalRef.current.scrollTo({ top: 0, left: 0, behavior: 'auto' })
     } else {
       document.body.style.overflow = ''
     }
@@ -78,15 +81,15 @@ export default function Artists() {
       </div>
 
       {artist && (
-        <div onClick={() => setSelected(null)} style={{
+        <div ref={modalRef} key={artist.id} onClick={() => setSelected(null)} style={{
           position: 'fixed', inset: 0, background: 'rgba(8,8,8,0.95)',
-          zIndex: 2000, overflow: 'auto', display: 'flex', alignItems: 'flex-start', justifyContent: 'center', padding: '48px 24px',
+          zIndex: 2000, overflowY: 'auto', WebkitOverflowScrolling: 'touch', display: 'flex', alignItems: 'flex-start', justifyContent: 'center', padding: '48px 24px',
         }}>
           <div className="artist-modal-inner" onClick={e => e.stopPropagation()} style={{
-            background: 'var(--bg2)', border: '1px solid var(--border)', maxWidth: 760, width: '100%',
+            background: 'var(--bg2)', border: '1px solid var(--border)', maxWidth: 760, width: 'min(100%, 760px)', boxSizing: 'border-box',
           }}>
             <div className="video-placeholder" style={{
-              height: 360,
+              minHeight: 240,
               backgroundImage: artist.videoId ? `url(https://img.youtube.com/vi/${artist.videoId}/hqdefault.jpg)` : undefined,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
