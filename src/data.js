@@ -49,7 +49,7 @@ export const artists = [
     realName: 'Fatos Cunaku',
     origin: 'Prishtinë',
     genres: ['Experimental', 'Noise'],
-    bio: 'Born and raised in Kosovo, he began producing at 16 and quickly became a prominent figure in the Balkan underground electronic scene. As the founder of RaveCultur, he has built a major platform supporting young artists and organizing events.',
+    bio: 'Fatos Cunaku, professionally known as DJ Toske, is an electronic music DJ, producer, and entrepreneur based in Prishtina, Kosovo, specializing in minimal techno and tech house. He is the founder of RaveCultur, a global dance music platform with nearly one million followers. As a DJ, Toske has performed internationally across Italy, Cyprus, the Netherlands, and Albania, sharing lineups with prominent artists like Ryan Elliott and Fleur Shore.He is also a highly regarded producer with a focus on meticulous sound design and sleek, driving rhythms. His breakout single Magnetic, released on Mellowdy Records and premiered by Houseum, achieved over 100,000 streams and received dancefloor play in more than 100 countries. His latest produced track, Trade Off, was released in May 2026 on the SPACE26 compilation via the Lost Space Dreams label, delivering a high-energy, 129 BPM tech house groove. His discography also includes the deep, atmospheric minimal track Far Away.',
     links: { soundcloud: 'https://soundcloud.com/tosketoske', instagram: 'https://www.instagram.com/toske_____/' },
     videoId: 'IY3WLsM-NGY',
     videoLabel: 'TOSKE — Live YouTube Set',
