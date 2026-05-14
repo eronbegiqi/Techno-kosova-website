@@ -40,8 +40,8 @@ export default function Nav() {
       backdropFilter: scrolled ? 'blur(12px)' : 'none',
       transition: 'all 0.4s',
     }}>
-      <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 32px', height: 64, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-        <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'baseline', gap: 8 }}>
+      <div className="site-nav-inner" style={{ maxWidth: 1280, margin: '0 auto', padding: '0 32px', height: 64, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        <Link className="site-brand" to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'baseline', gap: 8 }}>
           <span style={{ fontFamily: 'var(--font-d)', fontSize: 22, letterSpacing: '0.08em', color: 'var(--fg)' }}>TECHNO</span>
           <span style={{ fontFamily: 'var(--font-d)', fontSize: 22, letterSpacing: '0.08em', color: 'var(--acid)' }}>KOSOVO</span>
         </Link>
@@ -87,8 +87,30 @@ export default function Nav() {
 
       <style>{`
         @media (max-width: 720px) {
+          .site-nav-inner {
+            padding: 0 16px !important;
+            width: 100%;
+            min-width: 0;
+            box-sizing: border-box;
+          }
+          .site-brand {
+            min-width: 0;
+            gap: 5px !important;
+          }
+          .site-brand span {
+            font-size: 18px !important;
+            letter-spacing: 0.04em !important;
+          }
           .desktop-nav { display: none !important; }
           .hamburger { display: block !important; }
+          .mobile-menu {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 18px 16px !important;
+          }
+          .mobile-menu a {
+            font-size: 24px !important;
+          }
         }
       `}</style>
     </nav>

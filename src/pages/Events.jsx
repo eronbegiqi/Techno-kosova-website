@@ -20,7 +20,7 @@ function EventRow({ ev }) {
 
   return (
     <div className="event-row" style={{ background: 'var(--bg)' }}>
-      <div onClick={() => setOpen(o => !o)} style={{
+      <div className="event-summary" onClick={() => setOpen(o => !o)} style={{
         display: 'grid', gridTemplateColumns: '80px 1fr auto auto',
         gap: 24, alignItems: 'center', padding: '28px 32px',
         borderBottom: open ? '1px solid var(--border)' : 'none',
@@ -68,7 +68,7 @@ function EventRow({ ev }) {
       </div>
 
       {open && (
-        <div style={{ padding: '32px 32px 32px 136px', background: 'var(--bg2)', display: 'grid', gridTemplateColumns: '1fr 280px', gap: 40 }}>
+        <div className="event-details" style={{ padding: '32px 32px 32px 136px', background: 'var(--bg2)', display: 'grid', gridTemplateColumns: '1fr 280px', gap: 40 }}>
           <div>
             <p style={{ color: 'var(--fg)', fontSize: 13, lineHeight: 1.8, marginBottom: 24 }}>{ev.description}</p>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
