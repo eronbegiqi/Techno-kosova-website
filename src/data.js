@@ -27,7 +27,7 @@ export const artists = [
     realName: 'Uran Badivuku',
     origin: 'Prishtinë',
     genres: ['Dark Techno', 'EBM'],
-    bio: "Uran Badivuku, widely known as Uran B., is a pioneering DJ, and cultural organizer based in Prishtina. As a driving force behind the local electronic music scene, he co-founded the influential collective and organization Hapësira, which has played a major role in shaping the contemporary underground house and techno movement in Kosovo.  With a forward-thinking approach that dates back to the early days of the post-war warehouse scene at Rilindja, Uran has spent over a decade breaking musical routines and building an international platform for Balkan artists. Email contact uran@hapesira.space",
+    bio: "Uran Badivuku, widely known as Uran B., is a pioneering DJ, and cultural organizer based in Prishtina. As a driving force behind the local electronic music scene, he co-founded the influential collective and organization Hapësira, which has played a major role in shaping the contemporary underground house and techno movement in Kosovo.  With a forward-thinking approach that dates back to the early days of the post-war warehouse scene at Rilindja, Uran has spent over two decades breaking musical routines and building an international platform for Balkan artists. Email contact uran@hapesira.space",
     links: { soundcloud: 'https://soundcloud.com/uranb', instagram: 'https://instagram.com/uranb' },
     videoId: 'qfQb4D0cdgo',
     videoLabel: 'Uran B. — Live YouTube Set',
