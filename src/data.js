@@ -60,7 +60,7 @@ export const artists = [
     realName: 'Anita Bojniku',
     origin: 'Prishtinë',
     genres: ['House', 'Techno'],
-    bio: 'Anitë is a Prishtina-based DJ and selector whose recent sets for Guesthouse and UNUM Festival channel deep, groovy house with underground intensity.',
+    bio: 'Anitë is a Prishtina-based DJ and selector whose recent sets for Guesthouse and UNUM Festival channel deep , groovy house with underground intensity.',
     links: { soundcloud: 'https://soundcloud.com/anita-bojniku', ra: 'https://ra.co/dj/anite' },
     videoId: 'p6M4ua6RyIg',
     videoLabel: 'ANITË — YouTube Short',
