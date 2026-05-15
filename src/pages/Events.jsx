@@ -6,12 +6,23 @@ import { events } from '../data.js'
 gsap.registerPlugin(ScrollTrigger)
 
 const formatDate = (d) => {
-  const dt = new Date(d)
+  const dt = eventDate(d)
   return {
     day: dt.toLocaleDateString('en-GB', { day: '2-digit' }),
     month: dt.toLocaleDateString('en-GB', { month: 'short' }).toUpperCase(),
     year: dt.getFullYear(),
   }
+}
+
+const eventDate = (date) => {
+  const [year, month, day] = date.split('-').map(Number)
+  return new Date(year, month - 1, day)
+}
+
+const today = () => {
+  const date = new Date()
+  date.setHours(0, 0, 0, 0)
+  return date
 }
 
 function EventRow({ ev }) {
@@ -107,9 +118,9 @@ function EventRow({ ev }) {
 
 export default function Events() {
   const [filter, setFilter] = useState('all')
-  const now = new Date('2026-05-12')
-  const upcoming = events.filter(e => new Date(e.date) >= now).sort((a, b) => new Date(a.date) - new Date(b.date))
-  const past = events.filter(e => new Date(e.date) < now).sort((a, b) => new Date(b.date) - new Date(a.date))
+  const now = today()
+  const upcoming = events.filter(e => eventDate(e.date) >= now).sort((a, b) => eventDate(a.date) - eventDate(b.date))
+  const past = events.filter(e => eventDate(e.date) < now).sort((a, b) => eventDate(b.date) - eventDate(a.date))
   const filtered = filter === 'past' ? past : upcoming
 
   useEffect(() => {

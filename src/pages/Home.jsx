@@ -9,9 +9,20 @@ gsap.registerPlugin(ScrollTrigger)
 const formatDate = (d) =>
   new Date(d).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }).toUpperCase()
 
+const eventDate = (date) => {
+  const [year, month, day] = date.split('-').map(Number)
+  return new Date(year, month - 1, day)
+}
+
+const today = () => {
+  const date = new Date()
+  date.setHours(0, 0, 0, 0)
+  return date
+}
+
 export default function Home() {
-  const now = new Date('2026-05-12')
-  const upcoming = events.filter(e => new Date(e.date) >= now).sort((a, b) => new Date(a.date) - new Date(b.date))
+  const now = today()
+  const upcoming = events.filter(e => eventDate(e.date) >= now).sort((a, b) => eventDate(a.date) - eventDate(b.date))
   const featured = upcoming.filter(e => e.featured).slice(0, 3)
   const featuredArtists = artists.slice(0, 4)
 
