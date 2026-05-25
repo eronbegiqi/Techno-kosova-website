@@ -69,6 +69,8 @@ export default function Artists() {
                   <div style={{ display: 'flex', gap: 12 }}>
                     {a.links.soundcloud && <ExternalLink href={a.links.soundcloud} label="SC" />}
                     {a.links.instagram && <ExternalLink href={a.links.instagram} label="IG" />}
+                    {a.links.facebook && <ExternalLink href={a.links.facebook} label="FB" />}
+                    {a.links.linktree && <ExternalLink href={a.links.linktree} label="LT" />}
                     {a.links.ra && <ExternalLink href={a.links.ra} label="RA" />}
                     {a.links.bandcamp && <ExternalLink href={a.links.bandcamp} label="BC" />}
                   </div>
@@ -123,6 +125,8 @@ export default function Artists() {
               <div style={{ borderTop: '1px solid var(--border)', paddingTop: 28, display: 'flex', gap: 16, flexWrap: 'wrap' }}>
                 {artist.links.soundcloud && <a href={artist.links.soundcloud} target="_blank" rel="noreferrer" className="btn btn-ghost" style={{ padding: '10px 24px', fontSize: 11 }}>SoundCloud ↗</a>}
                 {artist.links.instagram && <a href={artist.links.instagram} target="_blank" rel="noreferrer" className="btn btn-ghost" style={{ padding: '10px 24px', fontSize: 11 }}>Instagram ↗</a>}
+                {artist.links.facebook && <a href={artist.links.facebook} target="_blank" rel="noreferrer" className="btn btn-ghost" style={{ padding: '10px 24px', fontSize: 11 }}>Facebook ↗</a>}
+                {artist.links.linktree && <a href={artist.links.linktree} target="_blank" rel="noreferrer" className="btn btn-ghost" style={{ padding: '10px 24px', fontSize: 11 }}>Linktree ↗</a>}
                 {artist.links.ra && <a href={artist.links.ra} target="_blank" rel="noreferrer" className="btn btn-ghost" style={{ padding: '10px 24px', fontSize: 11 }}>Resident Advisor ↗</a>}
                 {artist.links.bandcamp && <a href={artist.links.bandcamp} target="_blank" rel="noreferrer" className="btn btn-ghost" style={{ padding: '10px 24px', fontSize: 11 }}>Bandcamp ↗</a>}
               </div>
