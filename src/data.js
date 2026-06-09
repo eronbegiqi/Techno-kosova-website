@@ -231,7 +231,7 @@ export const artists = [
     bio: 'Giza Berisha is a Prishtina-based DJ and sound engineer, widely regarded as a local legend in Kosovo’s underground electronic music scene.With deep expertise in audio and sound systems, Giza is respected not only for his technical mastery behind the decks and in the booth, but also for his passionate support of the local scene. Known for his solid, groove-oriented sets, he regularly plays at Prishtina clubs and events, bringing quality sound and dedication that earns him huge respect among artists and club-goers alike.',
     links: { instagram: 'https://www.instagram.com/gizabert/' },
     videoId: '',
-    videoLabel: 'Video Coming Soon',
+    videoLabel: 'Giza — YouTube',
   },
   {
     id: 'leg-off',
@@ -294,9 +294,19 @@ export const artists = [
     realName: 'Genta Shyti',
     origin: 'Mitrovicë',
     genres: ['House', 'Tech House'],
-    bio: 'YUKO (Genta Shyti) is a DJ and selector from Mitrovicë, Kosovo. Performing under the name YUKO, she delivers energetic, dancefloor-focused sets that draw from house and tech-house traditions. Active on regional club lineups and social platforms, she represents a growing presence of women in the Kosovo electronic music scene. Follow her on Instagram for updates and mixes.',
-    links: { instagram: 'https://www.instagram.com/yukothedj' },
-    videoId: '',
+    bio: `YUKO is a Kosovo based DJ active since 2022, blending House, Tech House and Afro House
+with the driving energy of Peak Time Techno, alongside touches of Disco and Electro. Born and
+raised in Western Europe, between the Netherlands and Germany, she was influenced early on
+by the region’s electronic music culture and remains a key influence on her sets today.
+YUKO has performed at festivals including Meeting of Styles (MOS), Ngom Festival, Nomad
+Festival, Xhade Fest, CIRCLE Fest and ART Festival, alongside regular appearances in bars
+and clubs across Prishtina.
+
+Contact
+gentashyti1@gmail.com
++383 49 189 719 / WhatsApp`,
+    links: { instagram: 'https://www.instagram.com/yukothedj' , email: 'gentashyti1@gmail.com' },
+    videoId: '7fdLocr7wVw',
     videoLabel: 'Video Coming Soon',
   },
 
