@@ -156,7 +156,6 @@ export default function Home() {
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                   }}>
-                    <div className="play-icon" />
                     <div style={{ position: 'absolute', bottom: 10, left: 12, right: 12, display: 'flex', justifyContent: 'space-between' }}>
                       <span style={{ fontSize: 10, color: 'var(--fg-dim)', letterSpacing: '0.08em' }}>{a.videoLabel}</span>
                     </div>
@@ -182,13 +181,13 @@ export default function Home() {
               <h2 className="reveal-up" style={{ fontSize: 'clamp(48px, 6vw, 80px)', marginBottom: 24 }}>KOSOVO'S<br /><span className="text-acid">UNDERGROUND</span><br />VOICE</h2>
               <p className="reveal-up" style={{ color: 'var(--fg-dim)', fontSize: 14, lineHeight: 1.8, marginBottom: 32 }}>
                 Techno Kosovo is a media and events platform dedicated to the growth
-                of electronic music culture across Kosovo and the wider Balkan region.
+                of electronic music culture across Kosovo, Albania, the wider Balkan region and Europe.
                 We connect artists, promoters, and audiences — local and international.
               </p>
               <Link to="/about" className="btn btn-ghost reveal-up">Read More →</Link>
             </div>
             <div className="reveal-up" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 1, background: 'var(--border)' }}>
-              {[['12+', 'Events Per Year'], ['8', 'Resident Artists'], ['3K+', 'Community Members'], ['4', 'Cities Covered']].map(([n, l]) => (
+              {[['72+', 'PROJECTS & COLLABS'], ['120+', 'FEATURED ARTISTS'], ['3K+', 'Community Members'], ['4', 'Country Covered']].map(([n, l]) => (
                 <div key={l} style={{ background: 'var(--bg)', padding: 32 }}>
                   <div style={{ fontFamily: 'var(--font-d)', fontSize: 56, color: 'var(--acid)', lineHeight: 1 }}>{n}</div>
                   <div style={{ color: 'var(--fg-dim)', fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', marginTop: 8 }}>{l}</div>
