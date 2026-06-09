@@ -284,7 +284,7 @@ export const artists = [
 
     videoId: 'Zh7ujhJBpVE',
 
-    videoLabel: 'Video Coming Soon',
+    videoLabel: 'Neritaan YouTube Video',
 
   },
 
