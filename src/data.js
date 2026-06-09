@@ -307,7 +307,7 @@ gentashyti1@gmail.com
 +383 49 189 719 / WhatsApp`,
     links: { instagram: 'https://www.instagram.com/yukothedj' , email: 'gentashyti1@gmail.com' },
     videoId: '7fdLocr7wVw',
-    videoLabel: 'Video Coming Soon',
+    videoLabel: 'YUKO — YouTube Live DJ Set',
   },
 
 ]
