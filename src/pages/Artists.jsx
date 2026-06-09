@@ -55,7 +55,6 @@ export default function Artists() {
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
               }}>
-                <div className="play-icon" />
                 <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '12px 16px', background: 'linear-gradient(to top, rgba(8,8,8,0.9), transparent)' }}>
                   <p style={{ fontSize: 10, color: 'var(--fg-dim)', letterSpacing: '0.06em' }}>{a.videoLabel}</p>
                 </div>
@@ -105,7 +104,6 @@ export default function Artists() {
                   allowFullScreen
                 />
               )}
-              <div className="play-icon" style={{ width: 64, height: 64 }} />
               <div style={{ position: 'absolute', top: 20, right: 20 }}>
                 <button onClick={() => setSelected(null)} style={{
                   background: 'rgba(8,8,8,0.8)', border: '1px solid var(--border)', color: 'var(--fg)',
