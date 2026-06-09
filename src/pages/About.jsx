@@ -119,7 +119,7 @@ What started as a platform supporting local artists, events, and the growing sce
           <div>
             <div style={{ marginBottom: 48 }}>
               <h3 style={{ fontFamily: 'var(--font-d)', fontSize: 22, color: 'var(--acid)', marginBottom: 16 }}>LOCATION</h3>
-              <p style={{ color: 'var(--fg-dim)', fontSize: 13, lineHeight: 1.8 }}>Based in Prishtina, Kosovo.<br />Operating across all major Kosovo cities.</p>
+              <p style={{ color: 'var(--fg-dim)', fontSize: 13, lineHeight: 1.8 }}>Based in Prishtina, Kosovo.<br />Operating across all major Kosovo and Albania cities.</p>
             </div>
             <div style={{ marginBottom: 48 }}>
               <h3 style={{ fontFamily: 'var(--font-d)', fontSize: 22, color: 'var(--acid)', marginBottom: 16 }}>EMAIL</h3>
