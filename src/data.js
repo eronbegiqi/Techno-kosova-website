@@ -272,13 +272,13 @@ export const artists = [
 
     name: 'Neritaan',
 
-    realName: 'Neritaan',
+    realName: 'Neritan Murseli',
 
-    origin: 'Kosovo',
+    origin: 'Mitrovicë',
 
     genres: ['Minimal', 'Deep Tech'],
 
-    bio: "Neritaan is a DJ and producer of electronic music with minimal deep tech preferences. Find more at https://www.beatport.com/artist/neritaan/926976 and linktr.ee/neritaan Neritaan is mainly a prodcuer which is being played by many djs around his work is known internationaly and his track often hit top 10 beatport charts and his music is being played by many djs around the world. He is a very important figure in the Kosovo scene and he is one of the most talented producers coming from Kosovo.",
+    bio: "Neritaan is a DJ and producer of electronic music with minimal and deep-tech influences. Find more at https://www.beatport.com/artist/neritaan/926976 and linktr.ee/neritaan. Neritaan's productions have been played by regional DJs and have found placements on international digital platforms, contributing to his recognition within the Kosovo underground scene.",
 
     links: { soundcloud: 'https://soundcloud.com/neritaan', bandcamp: 'https://jusluvrecordings.bandcamp.com/album/cellophane-dreams-ep' },
 
@@ -286,6 +286,18 @@ export const artists = [
 
     videoLabel: 'Video Coming Soon',
 
+  },
+
+  {
+    id: 'yuko',
+    name: 'YUKO',
+    realName: 'Genta Shyti',
+    origin: 'Mitrovicë',
+    genres: ['House', 'Tech House'],
+    bio: 'YUKO (Genta Shyti) is a DJ and selector from Mitrovicë, Kosovo. Performing under the name YUKO, she delivers energetic, dancefloor-focused sets that draw from house and tech-house traditions. Active on regional club lineups and social platforms, she represents a growing presence of women in the Kosovo electronic music scene. Follow her on Instagram for updates and mixes.',
+    links: { instagram: 'https://www.instagram.com/yukothedj' },
+    videoId: '',
+    videoLabel: 'Video Coming Soon',
   },
 
 ]
