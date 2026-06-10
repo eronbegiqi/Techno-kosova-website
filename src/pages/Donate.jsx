@@ -34,7 +34,7 @@ export default function Donate() {
         <div className="container">
           <div className="reveal-donate">
             <a href="https://www.ko-fi.com/TechnoKosovo" target="_blank" rel="noopener noreferrer" className="btn" style={{ fontSize: 13, padding: '18px 48px', textDecoration: 'none', display: 'inline-block' }}>
-              Subscribe as Supporter →
+              Donate Here
             </a>
             <p style={{ color: 'var(--fg-faint)', fontSize: 11, marginTop: 16 }}>Payments with Visa, Paypal and Mastercard</p>
           </div>
