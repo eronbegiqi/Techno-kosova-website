@@ -78,7 +78,7 @@ export default function Home() {
           <div className="hero-sub" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: 24 }}>
             <p style={{ color: 'var(--fg-dim)', fontSize: 14, maxWidth: 480, lineHeight: 1.7 }}>
               Electronic music, nightlife, and underground culture<br />
-              in Kosovo. Discover events, artists, and the scene.
+              in Kosovo and the region. Discover events, artists, and the scene.
             </p>
             <div style={{ display: 'flex', gap: 16 }}>
               <Link to="/events" className="btn">View Events</Link>

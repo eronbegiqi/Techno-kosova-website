@@ -16,7 +16,7 @@ export default function Footer() {
               TECHNO<span style={{ color: 'var(--acid)' }}>KOSOVO</span>
             </div>
             <p style={{ color: 'var(--fg-dim)', fontSize: 12, lineHeight: 1.8, maxWidth: 260 }}>
-              Electronic music, nightlife, and underground culture in Kosovo. Based in Prishtinë.
+              Electronic music, nightlife, and underground culture in Kosovo and the region. Based in Prishtinë.
             </p>
           </div>
 
