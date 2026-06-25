@@ -8,6 +8,8 @@ import Events from './pages/Events.jsx'
 import Artists from './pages/Artists.jsx'
 import About from './pages/About.jsx'
 import Donate from './pages/Donate.jsx'
+import Portfolio from './pages/Portfolio.jsx'
+import PortfolioProject from './pages/PortfolioProject.jsx'
 
 export default function App() {
   const location = useLocation()
@@ -71,6 +73,8 @@ export default function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/artists" element={<Artists />} />
           <Route path="/about" element={<About />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio/:slug" element={<PortfolioProject />} />
           <Route path="/contact" element={<Navigate to="/about" replace />} />
           <Route path="/donate" element={<Donate />} />
         </Routes>
