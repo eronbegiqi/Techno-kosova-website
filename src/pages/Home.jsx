@@ -121,7 +121,7 @@ export default function Home() {
                     {ev.lineup.slice(0, 3).map(n => <span key={n} className="tag tag-dim">{n}</span>)}
                   </div>
                   <div style={{ marginTop: 'auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <span style={{ color: 'var(--acid)', fontFamily: 'var(--font-b)', fontSize: 12 }}>{ev.price}</span>
+                    {/* <span style={{ color: 'var(--acid)', fontFamily: 'var(--font-b)', fontSize: 12 }}>{ev.price}</span> */}
                     {!ev.soldOut && (
                       <a href={ev.ticketLink} target="_blank" rel="noreferrer" className="btn" style={{ padding: '10px 20px', fontSize: 11 }}>Buy Tickets</a>
                     )}

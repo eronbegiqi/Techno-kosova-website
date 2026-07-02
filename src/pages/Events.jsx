@@ -96,14 +96,14 @@ function EventRow({ ev }) {
           </div>
           <div style={{ borderLeft: '1px solid var(--border)', paddingLeft: 40 }}>
             <p style={{ fontSize: 10, color: 'var(--acid)', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: 16 }}>Tickets</p>
-            {ev.price.split('/').map(p => (
+            {/* {ev.price.split('/').map(p => (
               <div key={p} style={{ borderBottom: '1px solid var(--border)', padding: '12px 0', display: 'flex', justifyContent: 'space-between' }}>
                 <span style={{ color: 'var(--fg-dim)', fontSize: 11 }}>
                   {p.trim().includes('advance') ? 'Advance' : p.trim().includes('door') ? 'At the Door' : 'Ticket'}
                 </span>
                 <span style={{ color: 'var(--fg)', fontSize: 12 }}>{p.trim()}</span>
               </div>
-            ))}
+            ))} */}
             {!ev.soldOut && (
               <a href={ev.ticketLink} target="_blank" rel="noreferrer" className="btn" style={{ marginTop: 20, width: '100%', textAlign: 'center', display: 'block' }}>
                 Buy Tickets ↗
