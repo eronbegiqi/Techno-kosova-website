@@ -62,7 +62,7 @@ function EventRow({ ev }) {
         </div>
 
         <div style={{ textAlign: 'right', display: 'flex', flexDirection: 'column', gap: 8, alignItems: 'flex-end' }}>
-          <span style={{ color: 'var(--acid)', fontSize: 12, fontFamily: 'var(--font-b)', whiteSpace: 'nowrap' }}>{ev.price.split('/')[0].trim()}</span>
+          {/* <span style={{ color: 'var(--acid)', fontSize: 12, fontFamily: 'var(--font-b)', whiteSpace: 'nowrap' }}>{ev.price.split('/')[0].trim()}</span> */}
           <span style={{ color: 'var(--fg-dim)', fontSize: 10, letterSpacing: '0.08em', textTransform: 'uppercase' }}>{open ? '↑ Less' : '↓ More'}</span>
         </div>
 
