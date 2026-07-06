@@ -114,6 +114,9 @@ export default function Home() {
                     <span style={{ fontFamily: 'var(--font-d)', fontSize: 13, color: 'var(--fg-dim)', letterSpacing: '0.08em' }}>0{i + 1}</span>
                   </div>
                   <p style={{ fontSize: 11, color: 'var(--acid)', letterSpacing: '0.14em', textTransform: 'uppercase', marginBottom: 8 }}>{formatDate(ev.date)} — {ev.time}</p>
+                  {ev.image && (
+                    <img src={ev.image} alt={ev.title} style={{ width: '100%', height: 220, objectFit: 'cover', borderRadius: 18, marginBottom: 18 }} />
+                  )}
                   <h3 style={{ fontFamily: 'var(--font-d)', fontSize: 48, lineHeight: 1, marginBottom: 4 }}>{ev.title}</h3>
                   <p style={{ color: 'var(--fg-dim)', fontSize: 12, marginBottom: 16 }}>{ev.venue} · {ev.address}</p>
                   <p style={{ color: 'var(--fg-dim)', fontSize: 12, lineHeight: 1.6, marginBottom: 20 }}>{ev.description}</p>

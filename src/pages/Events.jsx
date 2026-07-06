@@ -80,6 +80,11 @@ function EventRow({ ev }) {
 
       {open && (
         <div className="event-details" style={{ padding: '32px 32px 32px 136px', background: 'var(--bg2)', display: 'grid', gridTemplateColumns: '1fr 280px', gap: 40 }}>
+          {ev.image && (
+            <div style={{ gridColumn: '1 / -1', marginBottom: 24, borderRadius: 18, overflow: 'hidden' }}>
+              <img src={ev.image} alt={ev.title} style={{ width: '100%', height: 420, objectFit: 'cover' }} />
+            </div>
+          )}
           <div>
             <p style={{ color: 'var(--fg)', fontSize: 13, lineHeight: 1.8, marginBottom: 24 }}>{ev.description}</p>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
@@ -96,14 +101,6 @@ function EventRow({ ev }) {
           </div>
           <div style={{ borderLeft: '1px solid var(--border)', paddingLeft: 40 }}>
             <p style={{ fontSize: 10, color: 'var(--acid)', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: 16 }}>Tickets</p>
-            {/* {ev.price.split('/').map(p => (
-              <div key={p} style={{ borderBottom: '1px solid var(--border)', padding: '12px 0', display: 'flex', justifyContent: 'space-between' }}>
-                <span style={{ color: 'var(--fg-dim)', fontSize: 11 }}>
-                  {p.trim().includes('advance') ? 'Advance' : p.trim().includes('door') ? 'At the Door' : 'Ticket'}
-                </span>
-                <span style={{ color: 'var(--fg)', fontSize: 12 }}>{p.trim()}</span>
-              </div>
-            ))} */}
             {!ev.soldOut && (
               <a href={ev.ticketLink} target="_blank" rel="noreferrer" className="btn" style={{ marginTop: 20, width: '100%', textAlign: 'center', display: 'block' }}>
                 Buy Tickets ↗
