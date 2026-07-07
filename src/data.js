@@ -309,6 +309,57 @@ gentashyti1@gmail.com
     videoId: '7fdLocr7wVw',
     videoLabel: 'YUKO — YouTube Live DJ Set',
   },
+  {
+    id: 'genc-elezaj',
+    name: 'Genc Elezaj',
+    realName: 'Genc Elezaj',
+    origin: 'Prishtinë',
+    genres: ['Techno', 'House', 'Experimental'],
+    bio: `Genc Elezaj is a Prishtina-based DJ, producer, and multidisciplinary musician known for his deep connection to Kosovo’s electronic music scene. Since picking up the decks in 2018, Genc has quickly established himself as a versatile and respected figure in the region’s underground electronic community.
+
+His musical journey spans far beyond the booth. A skilled songwriter and composer, Genc has created music for theatre productions and film projects while maintaining a strong presence in live electronic performance. His DJ sets are celebrated for their eclectic and atmospheric approach — blending hypnotic techno, house, and experimental textures with a keen sense of mood and energy that adapts fluidly to any dancefloor.
+
+In addition to performing at major local venues and events such as Frekuence Club, SERVIS nights, Dokufest after-parties, and Art Explora Festival, Genc has shared lineups with international artists and contributed to the growth of Prishtina’s vibrant club culture. He is also the co-founder of Damar Studios, where he works on music production and mixing, and has been actively involved in launching a new electronic music label alongside fellow artists.
+
+Whether delivering slow-burning, hypnotic grooves or high-energy peak-time selections, Genc Elezaj brings technical precision, emotional depth, and a genuine love for the craft to every performance. He continues to push boundaries as both a selector and a creative force in Kosovo’s electronic music landscape.`,
+    links: { youtube: 'https://www.youtube.com/watch?v=QwKrquQQF5c', instagram: 'https://instagram.com/dimensiongenc/' },
+    videoId: 'QwKrquQQF5c',
+    videoLabel: 'Amok Radio w/ Genc Elezaj, KS',
+    tags: ['DJ', 'Producer'],
+  },
+  {
+    id: 'elise',
+    name: 'Elise',
+    realName: 'Elisa Maxhuni',
+    origin: 'Prishtinë',
+    genres: ['Electro', 'Breaks', 'Techno'],
+    bio: `Elise (E|ise) is a Prishtina-based DJ and sound artist with a background in architecture. Known for her genre-blending, intuitive sets that fuse electro, breaks, and techno, she creates immersive atmospheres shaped by the energy of the queer dancefloor. A central figure in Prishtina’s underground and queer nightlife, Elise performs regularly at Grand Hotel Prishtina, Zone Club, Servis and major local events. Her practice also includes sound installations and DJ workshops, constantly exploring the relationship between sound, space, and community.`,
+    links: {
+      youtube: 'https://www.youtube.com/watch?v=LrO0_p1hxCk',
+      instagram: 'https://www.instagram.com/_e_elise/',
+      soundcloud: 'https://soundcloud.com/elissssss',
+      ra: 'https://ra.co/dj/eise/biography'
+    },
+    videoId: 'LrO0_p1hxCk',
+    videoLabel: 'Elise — YouTube',
+    tags: ['DJ', 'Sound Artist'],
+  },
+  {
+    id: 'artssassin',
+    name: 'ARTSSASSIN',
+    realName: 'Art Haliti',
+    origin: 'Prishtinë',
+    genres: ['Electronic', 'House', 'Techno'],
+    bio: `Artssassin (Art Haliti) is a Prishtina-based DJ celebrated for his eclectic and curiosity-led selections. Playing music primarily for his own enjoyment, he creates smooth, energetic sets that span a wide range of electronic genres. A staple of the local scene, Artssassin has performed at Urban Sessions, Kultura House, and international events including Unum Festival. Whether as Artssassin or his alter ego Spoiled Art, he brings genuine passion and musical depth to every performance.`,
+    links: {
+      youtube: 'https://youtu.be/GFzTgLQdJdg',
+      instagram: 'https://www.instagram.com/art.haliti/',
+      soundcloud: 'https://soundcloud.com/arthaliti'
+    },
+    videoId: 'GFzTgLQdJdg',
+    videoLabel: 'ARTSSASSIN — YouTube',
+    tags: ['DJ'],
+  },
 
 ]
 
