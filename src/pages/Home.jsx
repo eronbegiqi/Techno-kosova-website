@@ -22,7 +22,7 @@ const today = () => {
 
 export default function Home() {
   const now = today()
-  const upcoming = events.filter(e => eventDate(e.date) >= now).sort((a, b) => eventDate(a.date) - eventDate(b.date))
+  const upcoming = events.filter(e => !e.canceled && eventDate(e.date) >= now).sort((a, b) => eventDate(a.date) - eventDate(b.date))
   const featured = upcoming.filter(e => e.featured).slice(0, 3)
   const featuredArtists = artists.slice(0, 4)
 
@@ -105,14 +105,17 @@ export default function Home() {
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 1, background: 'var(--border)' }}>
-            {featured.map((ev, i) => (
-              <div key={ev.id} className="card reveal-up" style={{ background: 'var(--bg)', padding: 32, display: 'flex', flexDirection: 'column', gap: 16, minHeight: 320, position: 'relative', overflow: 'hidden' }}>
-                <div style={{ position: 'absolute', inset: 0, background: ev.posterColor, opacity: 0.4 }} />
-                <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', minHeight: '100%' }}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 24 }}>
-                    <span className="tag">{ev.soldOut ? 'SOLD OUT' : 'TICKETS AVAILABLE'}</span>
-                    <span style={{ fontFamily: 'var(--font-d)', fontSize: 13, color: 'var(--fg-dim)', letterSpacing: '0.08em' }}>0{i + 1}</span>
-                  </div>
+            {featured.map((ev, i) => {
+              const showTicketActions = ev.id !== 'oda-haliti-akti-i-hapjes'
+
+              return (
+                <div key={ev.id} className="card reveal-up" style={{ background: 'var(--bg)', padding: 32, display: 'flex', flexDirection: 'column', gap: 16, minHeight: 320, position: 'relative', overflow: 'hidden' }}>
+                  <div style={{ position: 'absolute', inset: 0, background: ev.posterColor, opacity: 0.4 }} />
+                  <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', minHeight: '100%' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 24 }}>
+                      {showTicketActions && <span className="tag">{ev.soldOut ? 'SOLD OUT' : 'TICKETS AVAILABLE'}</span>}
+                      <span style={{ fontFamily: 'var(--font-d)', fontSize: 13, color: 'var(--fg-dim)', letterSpacing: '0.08em' }}>0{i + 1}</span>
+                    </div>
                   <p style={{ fontSize: 11, color: 'var(--acid)', letterSpacing: '0.14em', textTransform: 'uppercase', marginBottom: 8 }}>{formatDate(ev.date)} — {ev.time}</p>
                   {ev.image && (
                     <img src={ev.image} alt={ev.title} style={{ width: '100%', height: 220, objectFit: 'cover', borderRadius: 18, marginBottom: 18 }} />
@@ -125,13 +128,14 @@ export default function Home() {
                   </div>
                   <div style={{ marginTop: 'auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     {/* <span style={{ color: 'var(--acid)', fontFamily: 'var(--font-b)', fontSize: 12 }}>{ev.price}</span> */}
-                    {!ev.soldOut && (
+                    {showTicketActions && !ev.soldOut && (
                       <a href={ev.ticketLink} target="_blank" rel="noreferrer" className="btn" style={{ padding: '10px 20px', fontSize: 11 }}>Buy Tickets</a>
                     )}
                   </div>
                 </div>
               </div>
-            ))}
+              )
+            })}
           </div>
         </div>
       </section>

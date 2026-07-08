@@ -48,6 +48,7 @@ function EventRow({ ev }) {
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 4, flexWrap: 'wrap' }}>
             <h3 style={{ fontFamily: 'var(--font-d)', fontSize: 28, lineHeight: 1 }}>{ev.title}</h3>
+            {ev.canceled && <span className="tag" style={{ color: '#ff4444', borderColor: '#ff4444' }}>CANCELED</span>}
             {ev.soldOut && <span className="tag" style={{ color: '#ff4444', borderColor: '#ff4444' }}>SOLD OUT</span>}
             {ev.featured && <span className="tag">FEATURED</span>}
           </div>
@@ -116,8 +117,8 @@ function EventRow({ ev }) {
 export default function Events() {
   const [filter, setFilter] = useState('all')
   const now = today()
-  const upcoming = events.filter(e => eventDate(e.date) >= now).sort((a, b) => eventDate(a.date) - eventDate(b.date))
-  const past = events.filter(e => eventDate(e.date) < now).sort((a, b) => eventDate(b.date) - eventDate(a.date))
+  const upcoming = events.filter(e => !e.canceled && eventDate(e.date) >= now).sort((a, b) => eventDate(a.date) - eventDate(b.date))
+  const past = events.filter(e => e.canceled || eventDate(e.date) < now).sort((a, b) => eventDate(b.date) - eventDate(a.date))
   const filtered = filter === 'past' ? past : upcoming
 
   useEffect(() => {
