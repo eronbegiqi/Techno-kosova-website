@@ -28,6 +28,7 @@ const today = () => {
 function EventRow({ ev }) {
   const [open, setOpen] = useState(false)
   const { day, month, year } = formatDate(ev.date)
+  const hideTicketActions = ['oda-haliti-akti-i-hapjes', '24-years-of-episode'].includes(ev.id)
 
   return (
     <div className="event-row" style={{ background: 'var(--bg)' }}>
@@ -68,14 +69,14 @@ function EventRow({ ev }) {
         </div>
 
         <div>
-          {!ev.soldOut ? (
+          {!hideTicketActions && (!ev.soldOut ? (
             <a href={ev.ticketLink} target="_blank" rel="noreferrer" className="btn"
               onClick={e => e.stopPropagation()} style={{ padding: '12px 24px', fontSize: 11, whiteSpace: 'nowrap' }}>
               Get Tickets
             </a>
           ) : (
             <span className="btn" style={{ background: 'transparent', color: '#ff4444', borderColor: '#ff4444', cursor: 'default', pointerEvents: 'none', padding: '12px 24px', fontSize: 11 }}>Sold Out</span>
-          )}
+          ))}
         </div>
       </div>
 
@@ -102,7 +103,7 @@ function EventRow({ ev }) {
           </div>
           <div style={{ borderLeft: '1px solid var(--border)', paddingLeft: 40 }}>
             <p style={{ fontSize: 10, color: 'var(--acid)', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: 16 }}>Tickets</p>
-            {!ev.soldOut && (
+            {!hideTicketActions && !ev.soldOut && (
               <a href={ev.ticketLink} target="_blank" rel="noreferrer" className="btn" style={{ marginTop: 20, width: '100%', textAlign: 'center', display: 'block' }}>
                 Buy Tickets ↗
               </a>
