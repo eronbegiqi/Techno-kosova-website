@@ -44,6 +44,22 @@ export const artists = [
     videoLabel: 'MiM — Live YouTube Set',
   },
   {
+    id: 'yllmegi',
+    name: 'YLLMEGI',
+    realName: 'Yll Megi',
+    origin: 'Kosovo',
+    genres: ['House', 'Electronic Disco', 'Jazz', 'Funk'],
+    bio: "Widely recognized as one of the most sophisticated selectors in the region, Yll Megi brings a highly unique, positive energy and flawless technical execution to the booth. His distinctive signature sound is an immersive, genre-fluid journey—seamlessly blending the deep grooves of House and Electronic Disco with soulful twists of Jazz and Funk. Known for his remarkable adaptability, Yll’s selections feel right at home anywhere from sun-drenched beach sets to high-altitude mountain raves. Over the years, he has consistently shared the stage with an impressive roster of international heavyweights, including Peter Kruder, Mike Huckaby, David Alvarado, Orlando Voorn, and Dave Mothersole. A true selector's selector, Yll Megi continues to be a driving force in the electronic landscape.",
+    links: {
+      website: 'https://yllmegi.com/',
+      soundcloud: 'https://soundcloud.com/yllmegi',
+      facebook: 'https://www.facebook.com/yllmegi',
+      instagram: 'https://www.instagram.com/yllmegi/',
+    },
+    videoId: 'Sni0KIIIdus',
+    videoLabel: 'YLLMEGI — YouTube',
+  },
+  {
     id: 'toske',
     name: 'TOSKE',
     realName: 'Fatos Cunaku',

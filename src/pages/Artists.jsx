@@ -69,6 +69,7 @@ export default function Artists() {
                     {a.links.soundcloud && <ExternalLink href={a.links.soundcloud} label="SC" />}
                     {a.links.instagram && <ExternalLink href={a.links.instagram} label="IG" />}
                     {a.links.facebook && <ExternalLink href={a.links.facebook} label="FB" />}
+                    {a.links.website && <ExternalLink href={a.links.website} label="WEB" />}
                     {a.links.linktree && <ExternalLink href={a.links.linktree} label="LT" />}
                     {a.links.ra && <ExternalLink href={a.links.ra} label="RA" />}
                     {a.links.bandcamp && <ExternalLink href={a.links.bandcamp} label="BC" />}
@@ -121,6 +122,7 @@ export default function Artists() {
               <p style={{ color: 'var(--fg)', fontSize: 14, lineHeight: 1.8, marginBottom: 36 }}>{artist.bio}</p>
 
               <div style={{ borderTop: '1px solid var(--border)', paddingTop: 28, display: 'flex', gap: 16, flexWrap: 'wrap' }}>
+                {artist.links.website && <a href={artist.links.website} target="_blank" rel="noreferrer" className="btn btn-ghost" style={{ padding: '10px 24px', fontSize: 11 }}>Website ↗</a>}
                 {artist.links.soundcloud && <a href={artist.links.soundcloud} target="_blank" rel="noreferrer" className="btn btn-ghost" style={{ padding: '10px 24px', fontSize: 11 }}>SoundCloud ↗</a>}
                 {artist.links.instagram && <a href={artist.links.instagram} target="_blank" rel="noreferrer" className="btn btn-ghost" style={{ padding: '10px 24px', fontSize: 11 }}>Instagram ↗</a>}
                 {artist.links.facebook && <a href={artist.links.facebook} target="_blank" rel="noreferrer" className="btn btn-ghost" style={{ padding: '10px 24px', fontSize: 11 }}>Facebook ↗</a>}
