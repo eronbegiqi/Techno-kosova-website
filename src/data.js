@@ -94,6 +94,19 @@ export const artists = [
     videoLabel: 'FLEKITZA — YouTube',
   },
   {
+    id: 'lab-sadiku',
+    name: 'LAB SADIKU',
+    realName: 'Lab Sadiku',
+    origin: 'Kosovo',
+    genres: ['Deep House', 'Contemporary Electronic', 'Underground Techno'],
+    bio: "A definitive force emerging from the regional electronic landscape, Lab Sadiku has spent over 12 years weaponizing precise track selection and dense, atmospheric soundscapes. Shifting fluidly between deep house structures and raw contemporary electronic textures, his meticulous approach to curation defines a highly distinct, uncompromising musical identity. Armed with more than a decade of active presence behind the decks, his sonic footprint spans massive international festival circuits—including landmark performances at UNUM Festival and Sunny Hill Festival—alongside deep-rooted club curation across Kosovo, Albania, and Montenegro. Holding key residencies at the region's most respected underground institutions, Lab Sadiku continues to expand his European trajectory, bringing his signature hypnotic dancefloor tension to international hubs like Strasbourg, France.",
+    links: {
+      instagram: 'https://www.instagram.com/lab.sadiku/',
+    },
+    videoId: 'mm_cPi-NI4s',
+    videoLabel: 'LAB SADIKU — YouTube',
+  },
+  {
     id: 'pandaaudio',
     name: 'PANDAAUDIO',
     realName: 'Visar Hoxha',
