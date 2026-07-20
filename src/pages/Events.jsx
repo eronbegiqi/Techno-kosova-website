@@ -28,7 +28,7 @@ const today = () => {
 function EventRow({ ev }) {
   const [open, setOpen] = useState(false)
   const { day, month, year } = formatDate(ev.date)
-  const hideTicketActions = ['oda-haliti-akti-i-hapjes', '24-years-of-episode'].includes(ev.id)
+  const hideTicketActions = ['oda-haliti-akti-i-hapjes', '24-years-of-episode'].includes(ev.id) || !ev.ticketLink
 
   return (
     <div className="event-row" style={{ background: 'var(--bg)' }}>

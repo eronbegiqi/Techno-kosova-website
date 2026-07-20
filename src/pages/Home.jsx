@@ -106,7 +106,7 @@ export default function Home() {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 1, background: 'var(--border)' }}>
             {featured.map((ev, i) => {
-              const showTicketActions = !['oda-haliti-akti-i-hapjes', '24-years-of-episode'].includes(ev.id)
+              const showTicketActions = !!ev.ticketLink && !['oda-haliti-akti-i-hapjes', '24-years-of-episode'].includes(ev.id)
 
               return (
                 <div key={ev.id} className="card reveal-up" style={{ background: 'var(--bg)', padding: 32, display: 'flex', flexDirection: 'column', gap: 16, minHeight: 320, position: 'relative', overflow: 'hidden' }}>
