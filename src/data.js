@@ -94,6 +94,21 @@ export const artists = [
     videoLabel: 'FLEKITZA — YouTube',
   },
   {
+    id: 'pandaaudio',
+    name: 'PANDAAUDIO',
+    realName: 'Visar Hoxha',
+    origin: 'Prishtinë',
+    genres: ['Techno', 'Experimental Techno', 'Dark Techno'],
+    bio: "Visar Hoxha, operating under the moniker Pandaudio, stands as an essential fixture of Kosovo’s contemporary electronic underground. With a legacy spanning back to 2004, his musical path was first sparked in childhood by continuous jamming on an old Casio keyboard before expanding into online forum mixes and underground event bookings. Today, he is widely celebrated for executing sets that strike a flawless balance between dense, attentive listening and explosive dancefloor energy. As a core member of Prishtina’s influential Servis collective—the visionaries behind the acclaimed RE:FORM series—Pandaudio is deeply woven into the structural heritage of the local clubbing scene. Drawing deep inspiration from experimental heavyweights like Skee Mask, Djrum, and Surgeon, alongside imprints like Warp and Editions Mego, his signature sound centers on live communication with the crowd. Having commanded booths everywhere from Sunbass to club spaces in Berlin, Pandaudio continues to push the boundaries of dark, space-driven underground techno, while spearheading new label initiatives to archive the scene's past and future local production talent.",
+    links: {
+      soundcloud: 'https://soundcloud.com/pandaudio',
+      instagram: 'https://www.instagram.com/pa_________nda/',
+      linktree: 'https://linktr.ee/pandaaudio',
+    },
+    videoId: '9zUtwxhRCQY',
+    videoLabel: 'PANDAAUDIO — YouTube',
+  },
+  {
     id: 'toske',
     name: 'TOSKE',
     realName: 'Fatos Cunaku',
