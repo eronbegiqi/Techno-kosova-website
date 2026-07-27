@@ -123,9 +123,6 @@ export default function Home() {
                   <h3 style={{ fontFamily: 'var(--font-d)', fontSize: 48, lineHeight: 1, marginBottom: 4 }}>{ev.title}</h3>
                   <p style={{ color: 'var(--fg-dim)', fontSize: 12, marginBottom: 16 }}>{ev.venue} · {ev.address}</p>
                   <p style={{ color: 'var(--fg-dim)', fontSize: 12, lineHeight: 1.6, marginBottom: 20 }}>{ev.description}</p>
-                  <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 24 }}>
-                    {ev.lineup.slice(0, 3).map(n => <span key={n} className="tag tag-dim">{n}</span>)}
-                  </div>
                   <div style={{ marginTop: 'auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     {/* <span style={{ color: 'var(--acid)', fontFamily: 'var(--font-b)', fontSize: 12 }}>{ev.price}</span> */}
                     {showTicketActions && !ev.soldOut && (

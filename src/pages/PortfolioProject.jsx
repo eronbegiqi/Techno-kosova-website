@@ -76,7 +76,7 @@ const projectData = {
     intro: 'A mix of photography, short-form video, and polished recap content designed to preserve the mood and impact of cultural events.',
     videos: [
       { title: 'Cultural Event Recap', videoId: 'qfQb4D0cdgo' },
-      { title: 'Event Moments', videoId: 'NWM88tWfRk8' },
+      { title: 'Event Moments', videoId: 'Md_Kh2-eJeI' },
     ],
   },
 }
