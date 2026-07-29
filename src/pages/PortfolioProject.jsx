@@ -79,6 +79,16 @@ const projectData = {
       { title: 'Event Moments', videoId: 'Md_Kh2-eJeI' },
     ],
   },
+  'balkan-event-night': {
+    title: 'Balkan Event Night',
+    type: 'Festival Coverage',
+    year: '2026',
+    location: 'Prishtina',
+    intro: 'Live coverage of Balkan Event Night on 25 July 2026 at E.DH.E, with high-energy performances and street-level electronic music culture. A YouTube recap video can be added here soon.',
+    videos: [
+      { title: 'Balkan Event Night YouTube Recap Coming Soon', videoId: '' },
+    ],
+  },
 }
 
 export default function PortfolioProject() {
@@ -125,13 +135,23 @@ export default function PortfolioProject() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 20 }}>
             {project.videos.map((video, index) => (
               <div key={video.title} className="card reveal-up" style={{ background: 'var(--bg2)', overflow: 'hidden' }}>
-                <div className="video-placeholder">
-                  <iframe
-                    src={`https://www.youtube.com/embed/${video.videoId}?rel=0`}
-                    title={video.title}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
+                <div className="video-placeholder" style={{ minHeight: 240, display: 'grid', placeItems: 'center', background: 'rgba(255,255,255,0.04)', color: 'var(--fg-dim)', padding: 20 }}>
+                  {video.videoId ? (
+                    <iframe
+                      src={`https://www.youtube.com/embed/${video.videoId}?rel=0`}
+                      title={video.title}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      style={{ width: '100%', minHeight: 240, border: 'none' }}
+                    />
+                  ) : (
+                    <div style={{ textAlign: 'center', maxWidth: 420 }}>
+                      <div style={{ fontFamily: 'var(--font-d)', fontSize: 28, marginBottom: 12 }}>Video Placeholder</div>
+                      <p style={{ color: 'var(--fg-dim)', fontSize: 13, lineHeight: 1.7 }}>
+                        Add a YouTube video ID here to display the official Balkan Event Night recap.
+                      </p>
+                    </div>
+                  )}
                 </div>
                 <div style={{ padding: 20 }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8 }}>

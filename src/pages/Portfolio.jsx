@@ -7,6 +7,16 @@ gsap.registerPlugin(ScrollTrigger)
 
 const highlights = [
   {
+    slug: 'balkan-event-night',
+    title: 'Balkan Event Night',
+    type: 'Festival Coverage',
+    location: 'Prishtina',
+    year: '2026',
+    summary: 'A street-level celebration of electronic music from the heart of Prishtina, captured across live performances and city atmosphere.',
+    image: 'https://i.imgur.com/qiopVSB.png',
+    videoId: '',
+  },
+  {
     slug: 'unum-festival-coverage',
     title: 'UNUM Festival Coverage',
     type: 'Festival Documentation',
