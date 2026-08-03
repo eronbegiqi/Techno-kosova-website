@@ -84,7 +84,7 @@ const projectData = {
     type: 'Festival Coverage',
     year: '2026',
     location: 'Prishtina',
-    intro: 'Live coverage of Balkan Event Night on 25 July 2026 at E.DH.E, with high-energy performances and street-level electronic music culture. A YouTube recap video can be added here soon.',
+    intro: 'An electrifying capture of Balkan Event Night (25 July 2026) at E.DH.E — showcasing raw DJ performances, crowd energy, and the urban nightlife atmosphere of Prishtina. This collection includes short-form highlights and a full recap, perfect for promoters, press, and social channels.',
     videos: [
       { title: 'Balkan Event Night – Full Recap', videoId: '9SEDoD27mu0' },
       { title: 'Balkan Event Night – Clip 1', videoId: 'loBF3wToApU' },
