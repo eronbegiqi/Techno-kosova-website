@@ -438,6 +438,17 @@ Whether delivering slow-burning, hypnotic grooves or high-energy peak-time selec
     videoLabel: 'ARTSSASSIN — YouTube',
     tags: ['DJ'],
   },
+  {
+    id: 'ksenark',
+    name: 'KSENARK',
+    realName: 'Kron Kelmendi',
+    origin: 'Prishtinë',
+    genres: ['Electronic'],
+    bio: 'Ksenark is an electronic music DJ & producer from Prishtina. More info coming soon.',
+    links: {},
+    videoId: 'j6iCwWUMu14',
+    videoLabel: 'KSENARK — YouTube',
+  },
 
 ]
 
