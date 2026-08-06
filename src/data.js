@@ -762,7 +762,7 @@ export const events = [
     address: 'Albania',
     lineup: ['Hard Techno Experience'],
     description: 'INFERNUM 2026 is not just another event, it’s a full force experience built around the raw energy of Hard Techno, massive sound, powerful visuals, and two nights created for those who live for the underground.',
-    ticketLink: 'https://urlto.me/2pY19',
+    ticketLink: 'https://shorturl.at/vDGQq',
     image: 'https://i.postimg.cc/G2FD7zLh/Whats-App-Image-2026-08-06-at-09-03-44.jpg',
     price: 'Tickets are extremely limited',
     soldOut: false,
