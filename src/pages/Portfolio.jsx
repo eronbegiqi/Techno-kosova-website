@@ -7,6 +7,16 @@ gsap.registerPlugin(ScrollTrigger)
 
 const highlights = [
   {
+    slug: 'street-party-prishtina-2026',
+    title: 'Street Party Prishtina 2026',
+    type: 'Event Coverage',
+    location: 'Prishtina',
+    year: '2026',
+    summary: 'Live coverage and short-form highlights from Street Party Prishtina 2026 featuring La Baresha, Luna Skye, Neritaan and more.',
+    image: 'https://i.postimg.cc/XJ8D9hkn/msedge-Ia54vdcmuh.png',
+    videoId: 'uQ7gmW-LI2s',
+  },
+  {
     slug: 'balkan-event-night',
     title: 'Balkan Event Night',
     type: 'Festival Coverage',

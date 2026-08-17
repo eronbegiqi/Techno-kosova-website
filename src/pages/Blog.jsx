@@ -11,6 +11,19 @@ export default function Blog() {
 
   const posts = [
     {
+      title: "KISSMET X NXT LVL N'maje vol2",
+      category: 'Event Preview',
+      date: '2026-08-21',
+      label: 'Aug 21 • TBA',
+      image: 'https://imgproxy.ra.co/_/quality:66/w:1442/rt:fill/aHR0cHM6Ly9pbWFnZXMucmEuY28vMTYyZTM4YjQzMTcyMTNiNDZjMDk0NzNiMmYwOWYxMzIyMzdmOGQyNC5wbmc=',
+      lines: [
+        'KISSMET X NXT LVL N\'MAJE vol2 returns to the peak of Golesh on 21 August 2026 for a hilltop gathering of sound and community.',
+        "Expect an intimate, carefully curated lineup featuring Olsvangèr, Sasho Uzun, Zogai, Erleta, and Uran B., with sunset-to-night sets and a raw, atmospheric vibe.",
+        'Tickets are available on Resident Advisor — bring warm layers and an appetite for long, immersive performances in a stunning natural setting.',
+      ],
+      tags: ['#KISSMET', '#NXT LVL', '#Golesh', '#Prishtina', '#ElectronicMusic'],
+    },
+    {
       title: 'ANITË at Sunny Hill Festival 2026',
       category: 'Artist Spotlight',
       date: '2026-08-02',

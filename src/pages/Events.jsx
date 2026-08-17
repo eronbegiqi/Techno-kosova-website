@@ -56,8 +56,10 @@ function EventRow({ ev }) {
           <p style={{ color: 'var(--fg-dim)', fontSize: 11, letterSpacing: '0.06em' }}>{ev.venue} · {ev.time}</p>
           <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginTop: 8 }}>
             {ev.lineup.slice(0, 4).map((n, idx) => (
-              <span key={n} style={{ fontSize: 10, color: 'var(--fg-dim)', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
-                {n}{idx < Math.min(3, ev.lineup.length - 1) ? ' ·' : ''}
+              <span key={typeof n === 'string' ? n : n.name} style={{ fontSize: 10, color: 'var(--fg-dim)', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
+                {typeof n === 'string' ? n : (
+                  <a href={n.link} target="_blank" rel="noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>{n.name}</a>
+                )}{idx < Math.min(3, ev.lineup.length - 1) ? ' ·' : ''}
               </span>
             ))}
           </div>
@@ -97,7 +99,15 @@ function EventRow({ ev }) {
               </div>
               <div>
                 <p style={{ fontSize: 10, color: 'var(--acid)', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: 4 }}>Full Lineup</p>
-                {ev.lineup.map(n => <p key={n} style={{ color: 'var(--fg)', fontSize: 12 }}>{n}</p>)}
+                {ev.lineup.map((n, i) => (
+                  typeof n === 'string' ? (
+                    <p key={n} style={{ color: 'var(--fg)', fontSize: 12 }}>{n}</p>
+                  ) : (
+                    <p key={n.name} style={{ color: 'var(--fg)', fontSize: 12 }}>
+                      <a href={n.link} target="_blank" rel="noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>{n.name}</a>
+                    </p>
+                  )
+                ))}
               </div>
             </div>
           </div>
