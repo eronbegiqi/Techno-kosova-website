@@ -210,7 +210,12 @@ export default function Home() {
           <p className="reveal-up" style={{ color: 'var(--fg-dim)', fontSize: 14, maxWidth: 480, margin: '0 auto 40px', lineHeight: 1.8 }}>
             Techno Kosovo is community-funded. Your support keeps events accessible, artists paid fairly, and the culture growing.
           </p>
-          <a href="https://www.ko-fi.com/TechnoKosovo" target="_blank" rel="noopener noreferrer" className="btn reveal-up">Support Us</a>
+          <div className="reveal-up" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
+            <a href="https://www.ko-fi.com/TechnoKosovo" target="_blank" rel="noopener noreferrer" className="btn">Support Us</a>
+            <a href='https://ko-fi.com/W7W81T5B7C' target='_blank' rel='noopener noreferrer'>
+              <img height='36' style={{ border: 0, height: 36 }} src='https://storage.ko-fi.com/cdn/kofi3.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' />
+            </a>
+          </div>
         </div>
       </section>
     </div>
