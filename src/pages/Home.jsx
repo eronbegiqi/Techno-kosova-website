@@ -93,6 +93,31 @@ export default function Home() {
         </div>
       </section>
 
+      {/* RADIO */}
+      <section className="section" style={{ paddingTop: 0 }}>
+        <div className="container">
+          <div className="reveal-up" style={{ maxWidth: 840, margin: '0 auto' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12, marginBottom: 18, flexWrap: 'wrap' }}>
+              <p className="text-dim uppercase" style={{ fontSize: 11, letterSpacing: '0.16em', margin: 0 }}>— Radio</p>
+              <span className="tag">LIVE MIX</span>
+            </div>
+            <div style={{ border: '1px solid var(--border)', borderRadius: 20, overflow: 'hidden', background: 'var(--bg)' }}>
+              <iframe
+                data-testid="embed-iframe"
+                style={{ borderRadius: 12, display: 'block', width: '100%' }}
+                src="https://open.spotify.com/embed/playlist/6deiPy5FsxI0UhkNKygIrI?utm_source=generator&theme=0&si=48cf709a40e345c0"
+                width="100%"
+                height="152"
+                frameBorder="0"
+                allowFullScreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FEATURED EVENTS */}
       <section className="section">
         <div className="container">
