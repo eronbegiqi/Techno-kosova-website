@@ -475,7 +475,7 @@ Whether delivering slow-burning, hypnotic grooves or high-energy peak-time selec
     genres: ['Electronic'],
     bio: 'Ksenark is an electronic music DJ & producer from Prishtina. More info coming soon.',
     links: {},
-    videoId: 'j6iCwWUMu14',
+    videoId: 'IAyL-3tW7oI',
     videoLabel: 'KSENARK — YouTube',
   },
 
