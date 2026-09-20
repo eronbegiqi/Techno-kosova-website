@@ -345,6 +345,20 @@ export const artists = [
     videoLabel: 'ALMARIN — Ngom Fest Live Short',
   },
   {
+    id: 'la-baresha',
+    name: 'LA BARESHA',
+    realName: 'Nora Murseli',
+    origin: 'Prishtinë',
+    genres: ['Electronic', 'House', 'Techno'],
+    bio: 'La Baresha is a female DJ from Prishtina, Kosovo, emerging from the local electronic music scene with a growing presence behind the decks.\n\nHer sound is rooted in electronic music and shaped by a natural connection to the dancefloor, bringing her own energy and perspective into every set. With appearances alongside established names from the regional and international electronic scene, La Baresha continues to build her path within Kosovo’s evolving nightlife culture.\n\nFrom intimate local spaces to larger club environments, her journey reflects a new generation of female artists contributing to the movement and identity of Kosovo’s electronic music scene.\n\nBased in Prishtina, La Baresha represents a fresh voice behind the decks, with more chapters still to come.',
+    links: {
+      instagram: 'https://www.instagram.com/la.baresha/',
+      soundcloud: 'https://soundcloud.com/labaresha',
+    },
+    videoId: 'uQ7gmW-LI2s',
+    videoLabel: 'LA BARESHA — Set for Street Party #prishtina',
+  },
+  {
 
     id: 'neritaan',
 
