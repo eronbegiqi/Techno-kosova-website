@@ -420,6 +420,21 @@ Whether delivering slow-burning, hypnotic grooves or high-energy peak-time selec
     tags: ['DJ', 'Producer'],
   },
   {
+    id: 'zogai',
+    name: 'ZOGAI',
+    realName: 'Asdren Zogaj',
+    origin: 'Prishtinë',
+    genres: ['Groove', 'House', 'Minimal Techno', 'Deep Tech'],
+    bio: 'Zogai is a DJ, vinyl collector and producer with over 20 years of experience behind the decks. His musical roots go back to hip hop, which he discovered at the age of 16. What began as a deep connection with hip hop culture gradually evolved over the years into a journey through the world of electronic music.\n\nAround 2019, he began collecting and playing groove, hypnotic, house, minimal techno, minimal deep tech, melodic techno, deep house and other sounds that carry a timeless character and continue to resonate across generations.\n\nBeyond DJing and collecting, Zogai is also a producer, constantly experimenting and creating new tracks. Some of his productions are available on Spotify, offering another side of his musical identity and creative process.\n\nHis vinyl collection is built around timeless records, releases that become more valuable and distinctive as the years pass. A true “Vinyl Digger”, as he describes himself, Zogai is driven by the search for records with character, history and authentic sound.\n\nWith a refined taste and a deep dedication to music, Zogai understands the value of originality. Every selection reflects his experience, passion and respect for authentic sound, bringing together years of musical knowledge with a constant curiosity to explore what comes next.',
+    links: {
+      instagram: 'https://www.instagram.com/asdrenzogai/',
+      website: 'https://marshalljungle.com/',
+    },
+    videoId: 'DceBF7cht7o',
+    videoLabel: 'ZOGAI — Instagram Reel',
+    tags: ['DJ', 'Producer', 'Vinyl Collector'],
+  },
+  {
     id: 'elise',
     name: 'Elise',
     realName: 'Elisa Maxhuni',
