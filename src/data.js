@@ -478,6 +478,28 @@ Whether delivering slow-burning, hypnotic grooves or high-energy peak-time selec
     videoId: 'IAyL-3tW7oI',
     videoLabel: 'KSENARK — YouTube',
   },
+  {
+    id: 'buda',
+    name: 'BUDA',
+    realName: 'Korab Etemi',
+    origin: 'Prishtinë',
+    genres: ['Electronic'],
+    bio: 'Bio coming soon',
+    links: {},
+    videoId: '',
+    videoLabel: 'BUDA — YouTube',
+  },
+  {
+    id: 'nanikilla',
+    name: 'NaniKilla',
+    realName: 'Adnan Imami',
+    origin: 'Pejë',
+    genres: ['Electronic'],
+    bio: 'Bio coming soon',
+    links: {},
+    videoId: 'oQpl6xoN0Os',
+    videoLabel: 'NaniKilla — YouTube',
+  },
 
 ]
 
