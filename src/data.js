@@ -500,6 +500,27 @@ Whether delivering slow-burning, hypnotic grooves or high-energy peak-time selec
     videoId: 'oQpl6xoN0Os',
     videoLabel: 'NaniKilla — YouTube',
   },
+  {
+    id: 'erleta',
+    name: 'Erleta',
+    realName: 'Erleta Kadrija',
+    origin: 'Preetz, Germany',
+    genres: ['House', 'Acid', 'Funk', 'Electronic'],
+    bio: `Erleta is a DJ and music selector born in Preetz, Germany and raised in Prishtina, Kosovo. With nearly a decade behind the decks, her sound has evolved through movement, travel, culture, and the energy of dance floors across different corners of the world.
+
+Her sets move freely between groovy house, acid, funk, and deeper electronic sounds, driven by carefully selected rhythms, punchy basslines, and an instinct for the dancefloor. Rather than being tied to one genre, Erleta follows the mood of the moment, building sets around groove, energy, emotion, and connection.
+
+Her musical journey has taken her from the local scene to international dancefloors, with appearances in Tokyo, Taipei, and Okinawa, as well as at Kala Festival in Albania. Along the way, she has shared lineups with artists including Roman Flügel, Jennifer Cardini, Paulette Lindacelva, Sweely, Dr. Banana, Sofia Kourtesis, and Horse Meat Disco.
+
+Whether behind the decks in an intimate club or on a festival stage, Erleta brings a natural ability to read the room and shape the energy around her. Her approach is rooted in curiosity, movement, and the simple feeling of getting lost in good music.`,
+    links: {
+      email: 'erletakadrija95@gmail.com',
+      instagram: 'https://www.instagram.com/erletakk/',
+      soundcloud: 'https://soundcloud.com/curlyfriee',
+    },
+    videoId: 'QhY4STOAXuE',
+    videoLabel: 'Erleta — YouTube',
+  },
 
 ]
 

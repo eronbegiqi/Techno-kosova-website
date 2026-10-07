@@ -125,6 +125,7 @@ export default function Artists() {
                 {artist.links.website && <a href={artist.links.website} target="_blank" rel="noreferrer" className="btn btn-ghost" style={{ padding: '10px 24px', fontSize: 11 }}>Website ↗</a>}
                 {artist.links.soundcloud && <a href={artist.links.soundcloud} target="_blank" rel="noreferrer" className="btn btn-ghost" style={{ padding: '10px 24px', fontSize: 11 }}>SoundCloud ↗</a>}
                 {artist.links.instagram && <a href={artist.links.instagram} target="_blank" rel="noreferrer" className="btn btn-ghost" style={{ padding: '10px 24px', fontSize: 11 }}>Instagram ↗</a>}
+                {artist.links.email && <a href={`mailto:${artist.links.email}`} className="btn btn-ghost" style={{ padding: '10px 24px', fontSize: 11 }}>Email ↗</a>}
                 {artist.links.facebook && <a href={artist.links.facebook} target="_blank" rel="noreferrer" className="btn btn-ghost" style={{ padding: '10px 24px', fontSize: 11 }}>Facebook ↗</a>}
                 {artist.links.linktree && <a href={artist.links.linktree} target="_blank" rel="noreferrer" className="btn btn-ghost" style={{ padding: '10px 24px', fontSize: 11 }}>Linktree ↗</a>}
                 {artist.links.ra && <a href={artist.links.ra} target="_blank" rel="noreferrer" className="btn btn-ghost" style={{ padding: '10px 24px', fontSize: 11 }}>Resident Advisor ↗</a>}
