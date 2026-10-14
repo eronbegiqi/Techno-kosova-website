@@ -11,6 +11,7 @@ import Blog from './pages/Blog.jsx'
 import Donate from './pages/Donate.jsx'
 import Portfolio from './pages/Portfolio.jsx'
 import PortfolioProject from './pages/PortfolioProject.jsx'
+import Store from './pages/Store.jsx'
 
 export default function App() {
   const location = useLocation()
@@ -77,6 +78,7 @@ export default function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/portfolio/:slug" element={<PortfolioProject />} />
+          <Route path="/store" element={<Store />} />
           <Route path="/contact" element={<Navigate to="/about" replace />} />
           <Route path="/donate" element={<Donate />} />
         </Routes>

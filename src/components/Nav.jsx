@@ -8,6 +8,7 @@ const links = [
   { to: '/artists', label: 'Artists' },
   { to: '/blog', label: 'Blog' },
   { to: '/portfolio', label: 'Portfolio' },
+  { to: '/store', label: 'Store' },
   { to: '/about', label: 'About' },
   { to: '/donate', label: 'Donate' },
 ]
