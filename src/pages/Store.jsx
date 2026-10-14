@@ -1,7 +1,7 @@
 const products = [
   { name: 'TK Classic Logo T-Shirt', price: '25€', image: 'https://i.postimg.cc/ZY6cjxdq/Gemini-Generated-Image-4v7xsn4v7xsn4v7x.jpg', link: 'https://ko-fi.com/s/58ec9b776d' },
-  { name: 'Graffiti Sticker Design T-Shirt', price: '25€', image: 'https://i.postimg.cc/zDTjpFgX/Gemini-Generated-Image-r3j89ur3j89ur3j8.jpg' },
-  { name: 'TK Sticker Design T-Shirt', price: '25€', image: 'https://i.postimg.cc/ry5JgNtY/Gemini-Generated-Image-sjh0ussjh0ussjh0.jpg' },
+  { name: 'Graffiti Sticker Design T-Shirt', price: '25€', image: 'https://i.postimg.cc/zDTjpFgX/Gemini-Generated-Image-r3j89ur3j89ur3j8.jpg', link: 'https://ko-fi.com/s/99416f2b3c' },
+  { name: 'TK Sticker Design T-Shirt', price: '25€', image: 'https://i.postimg.cc/ry5JgNtY/Gemini-Generated-Image-sjh0ussjh0ussjh0.jpg', link: 'https://ko-fi.com/s/2922dc3674' },
 ]
 
 export default function Store() {
