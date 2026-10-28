@@ -7,6 +7,16 @@ gsap.registerPlugin(ScrollTrigger)
 
 const highlights = [
   {
+    slug: 'kissmet-x-nxt-lvl-nmaje-vol-2-2026',
+    title: "Kissmet x NxT LvL N'maje Vol.2 2026",
+    type: 'Event Coverage',
+    location: 'Kosovo',
+    year: '2026',
+    summary: "Live coverage and short-form highlights from Kissmet x NxT LvL N'maje Vol.2 2026.",
+    image: 'https://i.postimg.cc/xCJXcKCD/756661729-17959103847173078-7412838577123339339-n.jpg',
+    videoId: 'Y2cxNbGRPjw',
+  },
+  {
     slug: 'street-party-prishtina-2026',
     title: 'Street Party Prishtina 2026',
     type: 'Event Coverage',
