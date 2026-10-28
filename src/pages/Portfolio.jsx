@@ -7,6 +7,16 @@ gsap.registerPlugin(ScrollTrigger)
 
 const highlights = [
   {
+    slug: 'technokosovo-hosts-minazuki-x-ksenark',
+    title: 'TechnoKosovo Hosts Minazuki x Ksenark',
+    type: 'Event Coverage',
+    location: 'Kosovo',
+    year: '2026',
+    summary: 'Live coverage and short-form highlights from TechnoKosovo Hosts Minazuki x Ksenark.',
+    image: 'https://i.postimg.cc/G9wQtLxp/Anzo-Poster.png',
+    videoId: 'OR2xM_G4hJ0',
+  },
+  {
     slug: 'kissmet-x-nxt-lvl-nmaje-vol-2-2026',
     title: "Kissmet x NxT LvL N'maje Vol.2 2026",
     type: 'Event Coverage',

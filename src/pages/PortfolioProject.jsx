@@ -6,6 +6,21 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 const projectData = {
+  'technokosovo-hosts-minazuki-x-ksenark': {
+    title: 'TechnoKosovo Hosts Minazuki x Ksenark',
+    type: 'Event Coverage',
+    year: '2026',
+    location: 'Kosovo',
+    intro: 'Live recordings and short-form clips from TechnoKosovo Hosts Minazuki x Ksenark.',
+    videos: [
+      { title: 'TechnoKosovo Hosts Minazuki x Ksenark — Short 01', videoId: 'OR2xM_G4hJ0' },
+      { title: 'TechnoKosovo Hosts Minazuki x Ksenark — Short 02', videoId: '-aela_l1aW0' },
+      { title: 'TechnoKosovo Hosts Minazuki x Ksenark — Short 03', videoId: '4yDYMiUxE6U' },
+      { title: 'TechnoKosovo Hosts Minazuki x Ksenark — Short 04', videoId: 'pKAtoL9n7ZY' },
+      { title: 'TechnoKosovo Hosts Minazuki x Ksenark — Short 05', videoId: 'UT5TERfSidg' },
+      { title: 'TechnoKosovo Hosts Minazuki x Ksenark — Full Video', videoId: 'ggdmjr4hMI0' },
+    ],
+  },
   'kissmet-x-nxt-lvl-nmaje-vol-2-2026': {
     title: "Kissmet x NxT LvL N'maje Vol.2 2026",
     type: 'Event Coverage',
