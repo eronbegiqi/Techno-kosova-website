@@ -53,7 +53,9 @@ function EventRow({ ev }) {
             {ev.soldOut && <span className="tag" style={{ color: '#ff4444', borderColor: '#ff4444' }}>SOLD OUT</span>}
             {ev.featured && <span className="tag">FEATURED</span>}
           </div>
-          <p style={{ color: 'var(--fg-dim)', fontSize: 11, letterSpacing: '0.06em' }}>{ev.venue} · {ev.time}</p>
+          <p style={{ color: 'var(--fg-dim)', fontSize: 11, letterSpacing: '0.06em' }}>
+            {ev.venue}{ev.time ? ` · ${ev.time}` : ''}
+          </p>
           <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginTop: 8 }}>
             {ev.lineup.slice(0, 4).map((n, idx) => (
               <span key={typeof n === 'string' ? n : n.name} style={{ fontSize: 10, color: 'var(--fg-dim)', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
@@ -90,7 +92,7 @@ function EventRow({ ev }) {
             </div>
           )}
           <div>
-            <p style={{ color: 'var(--fg)', fontSize: 13, lineHeight: 1.8, marginBottom: 24 }}>{ev.description}</p>
+            <p style={{ color: 'var(--fg)', fontSize: 13, lineHeight: 1.8, marginBottom: 24, whiteSpace: 'pre-line' }}>{ev.description}</p>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
               <div>
                 <p style={{ fontSize: 10, color: 'var(--acid)', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: 4 }}>Venue</p>

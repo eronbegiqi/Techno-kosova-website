@@ -526,6 +526,49 @@ Whether behind the decks in an intimate club or on a festival stage, Erleta brin
 
 export const events = [
   {
+    id: '25th-annual-halloween',
+    title: '25TH ANNUAL HALLOWEEN',
+    subtitle: '25 Years of Halloween Tradition',
+    date: '2026-10-31',
+    time: '',
+    venue: 'ZoneClub',
+    address: 'Prishtina, Kosovo',
+    lineup: ['Secret 47', 'Noki', 'BRYZ (Afterhours)'],
+    description: `25 YEARS OF HALLOWEEN TRADITION 🎃
+
+The annual Halloween celebration returns to ZoneClub, a tradition organized by Secret 47 & Noki.
+
+From New York to Prishtina, bringing another night of dark energy and dancefloor sounds.
+
+ Secret 47 · Noki · BRYZ (Afterhours)
+
+ ZoneClub, Prishtinë`,
+    ticketLink: null,
+    image: 'https://i.postimg.cc/CKpx7zws/858565160-18648050536050067-2454059734770277201-n.jpg',
+    price: 'TBA',
+    soldOut: false,
+    featured: true,
+    posterColor: '#111111',
+  },
+  {
+    id: 'dreq-show-hyjneshat-halloween',
+    title: 'DREQ SHOW x HYJNESHAT',
+    subtitle: 'HALLOWEEN AT JULIET OF THE SPIRITS',
+    date: '2026-10-31',
+    time: '21:00 - Until Late',
+    venue: 'Juliet Of The Spirits',
+    address: 'Prishtinë, Kosovo',
+    lineup: ['Tarot Readings by Rituali', 'Rebiswan b2b Elise', 'Leart Rama'],
+    description: `Tarot Readings by Rituali and Sounds from Rebiswan b2b Elise and Leart Rama.
+9 PM - Until Late @ Juliet Of The Spirits`,
+    ticketLink: null,
+    image: 'https://i.postimg.cc/qvqCCtjm/869722299-17940244980373748-8755033945882435124-n.jpg',
+    price: 'TBA',
+    soldOut: false,
+    featured: true,
+    posterColor: '#24152f',
+  },
+  {
     id: 'mihai-popoviciu-next-level',
     title: 'MIHAI POPOVICIU - NEXT LEVEL',
     subtitle: 'An Experimental Concept',
@@ -638,7 +681,6 @@ export const events = [
     image: 'https://s3.eu-central-2.wasabisys.com/sonnixapp/events/adriatique-presents--x---prishtina/86e36242-7b65-40c0-a51d-bea8b52b05c4.webp',
     price: '€55 phase 1 general admission / €75 VIP red / €75 VIP blue',
     soldOut: false,
-    canceled: true,
     featured: true,
     posterColor: '#101820',
   },
@@ -858,11 +900,12 @@ On a heavenly location situated at the peak of Golesh, KISSMET x NXT LVL N'MAJE 
     venue: 'Albania',
     address: 'Albania',
     lineup: ['Hard Techno Experience'],
-    description: 'INFERNUM 2026 is not just another event, it’s a full force experience built around the raw energy of Hard Techno, massive sound, powerful visuals, and two nights created for those who live for the underground.',
+    description: 'INFERNUM 2026 has been postponed. Further details about the rescheduled event will be announced soon.',
     ticketLink: 'https://shorturl.at/vDGQq',
     image: 'https://i.postimg.cc/G2FD7zLh/Whats-App-Image-2026-08-06-at-09-03-44.jpg',
     price: 'Tickets are extremely limited',
     soldOut: false,
+    canceled: true,
     featured: true,
     posterColor: '#aa1100',
   },

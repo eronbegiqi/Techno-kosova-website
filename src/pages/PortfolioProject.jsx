@@ -226,7 +226,7 @@ export default function PortfolioProject() {
               </span>
             </div>
             <h1 style={{ fontSize: 'clamp(44px, 7vw, 82px)', marginBottom: 16 }}>{project.title}</h1>
-            <p style={{ color: 'var(--fg-dim)', fontSize: 14, lineHeight: 1.8, maxWidth: 760 }}>{project.intro}</p>
+            <p style={{ color: 'var(--fg-dim)', fontSize: 14, lineHeight: 1.8, maxWidth: 760, whiteSpace: 'pre-line' }}>{project.intro}</p>
           </div>
         </div>
       </section>
