@@ -430,8 +430,8 @@ Whether delivering slow-burning, hypnotic grooves or high-energy peak-time selec
       instagram: 'https://www.instagram.com/asdrenzogai/',
       website: 'https://marshalljungle.com/',
     },
-    videoId: 'DceBF7cht7o',
-    videoLabel: 'ZOGAI — Instagram Reel',
+    videoId: 'xZ4pjA72s7E',
+    videoLabel: 'ZOGAI — YouTube Short',
     tags: ['DJ', 'Producer', 'Vinyl Collector'],
   },
   {
